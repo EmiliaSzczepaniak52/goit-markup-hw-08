@@ -1,0 +1,63 @@
+.client{
+    .client-header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        font-family: $font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color:$dark1;
+        text-align:center;
+        margin-top:94px;
+        }
+.list__top {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
+.our-client {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 94px;
+    list-style: none;
+    .client-svg {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: block;
+    fill: $grey1;
+    padding-left: 32px;
+    padding-top: 16px;
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color: $white;
+    border-color: $blue;
+    }
+    &:hover .our-svg {
+    fill: $blue;
+    }
+        .our-svg {
+         margin: auto;
+         fill: #afb1b8;
+         transition-property: fill;
+         transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+}
+
+}
+}

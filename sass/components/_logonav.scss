@@ -1,0 +1,32 @@
+.header-item {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navigation {
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+
+        .navigation__logo {
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19em;
+            letter-spacing: 0.03em;
+            font-family: $fonttwo;
+            text-decoration: none;
+            color: $black;
+            margin: 0;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover {
+                color: $dark;
+            }
+            .navigation__logo--web {
+                color:$blue;
+            }
+        }
+    }
+}

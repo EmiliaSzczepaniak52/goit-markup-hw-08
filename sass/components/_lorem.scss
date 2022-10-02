@@ -1,0 +1,43 @@
+.lorem {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 1170px;
+}
+
+.lorem__text {
+   
+font-family:$font;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71rem;
+letter-spacing: 0.03em;
+color:grey1;
+text-align: justify;
+flex-basis: calc((100% - 2 * 15px) / 4);
+}
+.lorem__header-text {
+    text-align: left;
+    width: 270px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.lorem__icon {
+    margin-left: 102px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+.lorem__list {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    list-style: none;
+}

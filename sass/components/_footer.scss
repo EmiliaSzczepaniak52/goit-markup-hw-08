@@ -1,0 +1,171 @@
+.footer-one {
+    background-color:$dark;
+    height: 252px;
+    padding-bottom: 60px;
+    display: flex;
+    color: $white;
+    flex-direction: column;
+    align-content: flex-start;
+    padding-top: 60px;
+    .navigation-footer {
+        margin-left: 0;
+        margin-right: 0;
+        .navigation__logo {
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19em;
+            letter-spacing: 0.03em;
+            font-family: $fonttwo;
+            text-decoration: none;
+            color: $black;
+            margin: 0;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover {
+                color: $dark;
+            }
+            .navigation__logo--web {
+                color:$blue;
+            }
+        }
+        .one-white {
+            color:$white;
+        }
+    }
+    .logo-address {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71em;
+        letter-spacing: 0.03em;
+        width: 246px;
+        height: 81px;
+        font-family:$font;
+        padding-top: 20px;
+        font-style: normal;
+        .logo-address__contact-footer {
+            color: rgba(255, 255, 255, 0.6);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71em;
+            list-style: none;
+            font-family: $font;
+        }
+        .logo-address__nav_footer {
+            line-height: 1.14em;
+            letter-spacing: 0.02em;
+            list-style: none;
+            padding-top: 9px;
+        }
+        .logo-address__link-address {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    .social-media {
+        margin-left: 70px;
+        .footer-second {
+            padding-top: 5px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color:$white;
+        }
+        .list {
+            list-style: none;
+            .footer-svg {
+                width: 44px;
+                height: 44px;
+                background-color: #ffffff1a;
+                display: flex;
+                border-radius: 50%;
+                fill: #afb1b8;
+                transition-property: background-color;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                &:hover,
+                &:focus {
+                    background-color: var(--blue);
+                    cursor: pointer;
+                }
+                .footer-img {
+                    margin: auto;
+                    fill: $white;
+                }
+            }
+        }
+    }
+    .social-media h5 {
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 1.13em;
+        font-weight: 700;
+    }
+    .social-media ul {
+        display: flex;
+        gap: 10px;
+    }
+}
+.footer-newsletter {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color:$white;
+    .footer-second {
+        padding-top: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color:$white;
+    }
+    .form-newsletter {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        .input-newsletter {
+            width: 358px;
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            padding-left: 16px;
+            margin-left: 78px;
+            background:$dark;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .button-newsletter {
+            background-color: $blue;
+            width: 200px;
+            height: 50px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border: 0;
+            border-radius: 4px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88rem;
+            letter-spacing: 0.06em;
+            color:$white;
+            margin-left: 12px;
+        }
+        .icon-button-newsletter {
+            fill: $white;
+        }
+    }
+}

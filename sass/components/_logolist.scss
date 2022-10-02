@@ -1,0 +1,103 @@
+.navigation__list{
+  display:flex;
+  flex-wrap:wrap;
+  list-style: none;
+  margin-left:120px;
+  align-items: center;;
+.navigation__list--nav {
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em;
+    color: $greythree;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left:32px;
+    &:hover &:focus {
+    color:$greytwo;
+    }
+    .navigation__portfolio {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    color: $black;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+    color:$blue;
+    text-decoration: none;
+     }
+
+    
+     }
+     .nav-agency {
+      position: relative;
+      color:$black;
+      width: 53px;
+      border-bottom: 4px solid $white;
+      transition-property: border-bottom;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &::after {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 4px;
+      bottom: 0;
+      left: 0;
+      background-color:$blue;
+      transform: translateY(28px);
+      border-radius: 2px;
+      pointer-events: none;
+              }
+  
+  
+  
+      }
+   }
+}
+
+.contact-nav {
+    font-style: normal;
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em;
+    color: $grey1;
+    .contact-nav__nav {
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em;
+    align-items: center;
+    color: $greythree;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:30px;
+    .contact-nav__link-address {
+    color: $grey1;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+     color: $blue;
+    fill: $blue;
+
+    }
+    &:focus{ color: $blue;
+    fill: $blue;}
+    .contact-nav__icon {
+    margin-right: 10px;
+    }
+                               }
+
+
+}
+}
