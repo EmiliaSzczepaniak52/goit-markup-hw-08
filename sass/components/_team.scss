@@ -1,7 +1,7 @@
 .team {
     background-color:$team;
     justify-content: center;
-    .team__header {
+    &__header {
         font-family: $font;
         font-style: normal;
         font-weight: 700;
@@ -13,7 +13,7 @@
         margin: 0 auto;
         margin-bottom: 50px;
         }
-    .team__he-she {
+    &__he-she {
     display: flex;
     gap: 30px;
         .team__our {
@@ -85,3 +85,32 @@
 
     }
 }
+@media screen and (min-width: 768px) {
+    .team {
+      max-width: 768px;
+      &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:30px;
+      }
+      &__card {
+        margin: 0;
+      }
+      &__image {
+        width: 354px;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .team {
+      max-width: 1200px;
+      &__container {
+        @include set-flex(row, center, center);
+        gap: 30px;
+      }
+      &__image {
+        width: 260px;
+      }
+    }
+  }
