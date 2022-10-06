@@ -18,24 +18,24 @@
     </head>
     <body>
         <header>
-            <div class="container header-item">
+            <div class="container container--header">
                 <nav class="navigation">
                     <a class="navigation__logo" href="./index.html">
                             <span class="navigation__logo--web">Web</span>Studio
                     </a>
-                    <ul class="navigation__list item-list">
-                        <li class="navigation__list--nav">
-                                <a href="./index.html" class="navigation__portfolio"
+                    <ul class="navigation__list">
+                        <li class="navigation__list--nav ">
+                                <a href="./index.html" class="navigation__link"
                                     >Agencja</a
                                 >
                         </li>
                         <li class="navigation__list--nav">
-                            <a href="./portfolio.html" class="navigation__portfolio nav-agency"
+                            <a href="./portfolio.html" class="navigation__link navigation__link--underline"
                                     >Portfolio</a
                             >
                         </li>
                         <li class="navigation__list--nav">
-                            <a href="kontakt.html" class="navigation__portfolio">Kontakt</a>
+                            <a href="kontakt.html" class="navigation__link">Kontakt</a>
                         </li>
                     </ul>
                 </nav>
@@ -44,9 +44,9 @@
                         <div class="contacy-nav__link">
                             <a
                             href="emailto:info@example.com"
-                            class="contact-nav__link-address"
+                            class="contact-nav__link--address"
                             >
-                            <svg class="header-nav__icon" width="16" height="12">
+                            <svg class="contact-nav__icon" width="16" height="12">
                             <use
                             href="./images/icons.svg#envelope"
                             ></use>
@@ -57,7 +57,7 @@
                     </li>
                     <li class="contact-nav__nav">
                         <div class="contact-nav__nav">
-                            <a href="tel:+48111111111" class="contact-nav__link-address">
+                            <a href="tel:+48111111111" class="contact-nav__link--address">
                             <svg class="contact-nav__icon" width="10" height="16">
                             <use href="./images/icons.svg#vector"></use>
                             </svg>
@@ -66,7 +66,7 @@
                         </div>
                     </li>
                 </ul>
-            </div> 
+            </div>
         </header>
         <main>
             <section>
@@ -402,73 +402,73 @@
                 </div>
             </section>
         </main>
-        <footer class="footer-one">
+        <footer class="footer">
             <div class="container">
                 <div>
-                    <div class="navigation-footer">
-                        <a class="navigation__logo one-white" href="./index.html">
-                            <span class="navigation__logo--web">Web</span>Studio
+                    <div class="footer__nav">
+                        <a class="footer__logo footer--white" href="./index.html">
+                            <span class="footer__logo--web">Web</span>Studio
                     </a>
                     </div>
-                    <address class="logo-address">
+                    <address class="footer__address">
                         <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-                        <ul class="logo-address__contact-footer">
-                        <li class="logo-address__nav_footer">
+                        <ul class="footer__address--contact">
+                        <li class="footer__address--list">
                         <a
                         href="mailto:info@example.com"
-                        class="logo-address__link-address"
+                        class="footer__address--link"
                         title="portfolio"
                         >info@devstudio.com</a>
                         </li>
-                        <li class="logo-address__nav_footer">
-                        <a href="tel:+48111111111" class="logo-address__link-address"
+                        <li class="logo__address__contact">
+                        <a href="tel:+48111111111" class="footer__address--link"
                         >+48 111 111 111</a>
                         </li>
                         </ul>
                     </address>
                 </div>
-                        <div class="social-media">
-                        <h5 class="footer-second">DOŁĄCZ DO NAS</h5>
-                        <ul class="list">
+                        <div class="footer__social">
+                        <h5 class="footer__social--heading">DOŁĄCZ DO NAS</h5>
+                        <ul class="footer__social--list">
                             <li>
-                            <a href="" class="footer-svg">
-                            <svg width="20" height="20" class="footer-img">
+                            <a href="" class="footer__social--svg">
+                            <svg width="20" height="20" class="footer__social--img">
                             <use href="images/icons.svg#insta"></use>
                             </svg>
                             </a>
                             </li>
-                                <li class="">
-                                    <a href="" class="footer-svg">
-                                        <svg width="20" height="20" class="footer-img">
+                            <li>
+                            <a href="" class="footer__social--svg">
+                                        <svg width="20" height="20" class="footer__social--img">
                                             <use href="images/icons.svg#tw"></use>
                                         </svg>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="" class="footer-svg">
-                                        <svg width="20" height="20" class="footer-img">
-                                            <use href="images/icons.svg#face"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="" class="footer-svg">
-                                        <svg width="20" height="20" class="footer-img">
-                                            <use href="images/icons.svg#in"></use>
-                                        </svg>
-                                    </a>
-                                </li>
+                            </a>
+                            </li>
+                            <li>
+                            <a href="" class="footer__social--svg">
+                            <svg width="20" height="20" class="footer__social--img">
+                            <use href="images/icons.svg#face"></use>
+                            </svg>
+                            </a>
+                            </li>
+                            <li>
+                            <a href="" class="footer__social--svg">
+                            <svg width="20" height="20" class="footer__social--img">
+                            <use href="images/icons.svg#in"></use>
+                            </svg>
+                            </a>
+                            </li>
                         </ul>
                         </div>
-                        <div class="footer-newsletter">
-                        <h4 class="footer-second">Zapisz się do newslettera</h4>
-                        <form name="newsletter" autocomplete="on" class="form-newsletter">
+                        <div class="footer__newsletter">
+                        <h4 class="footer__newstetter--heading">Zapisz się do newslettera</h4>
+                        <form name="newsletter" autocomplete="on" class="footer__newsletter--form">
                         <label>
-                        <input type="email" name="email" placeholder="E-mail" class="input-newsletter" />
+                        <input type="email" name="email" placeholder="E-mail" class="footer__newsletter--input" />
                         </label>
-                        <button type="submit" class="button-newsletter" name="button-news">
+                        <button type="submit" class="footer__newsletter--button" name="button-news">
                         Zapisz się
-                        <svg width="24" height="24" class="icon-button-newsletter">
+                        <svg width="24" height="24" class="footer__newsletter--icon">
                         <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                         </button>

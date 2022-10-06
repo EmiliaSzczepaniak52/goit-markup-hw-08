@@ -30,7 +30,7 @@ ul {
   padding: 0;
 }
 
-.header-item {
+.container--header {
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,14 +42,14 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header-item .navigation {
+.container--header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 0;
   margin-right: 0;
 }
-.header-item .navigation .navigation__logo {
+.container--header .navigation .navigation__logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19em;
@@ -65,10 +65,10 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-item .navigation .navigation__logo:hover {
+.container--header .navigation .navigation__logo:hover {
   color: #2f303a;
 }
-.header-item .navigation .navigation__logo .navigation__logo--web {
+.container--header .navigation .navigation__logo .navigation__logo--web {
   color: #2196f3;
 }
 
@@ -84,7 +84,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-.navigation__list .navigation__list--nav {
+.navigation__list .navigation__list-item {
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
@@ -97,10 +97,10 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 32px;
 }
-.navigation__list .navigation__list--nav:hover .navigation__list .navigation__list--nav:focus {
+.navigation__list .navigation__list-item:hover .navigation__list .navigation__list-item:focus {
   color: #646464;
 }
-.navigation__list .navigation__list--nav .navigation__portfolio {
+.navigation__list .navigation__list-item .navigation__link {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -113,11 +113,11 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation__list .navigation__list--nav .navigation__portfolio:hover {
+.navigation__list .navigation__list-item .navigation__link:hover {
   color: #2196f3;
   text-decoration: none;
 }
-.navigation__list .navigation__list--nav .nav-agency {
+.navigation__list .navigation__list-item .navigation__link--underline {
   position: relative;
   color: #000;
   width: 53px;
@@ -129,7 +129,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation__list .navigation__list--nav .nav-agency::after {
+.navigation__list .navigation__list-item .navigation__link--underline::after {
   content: " ";
   display: block;
   width: 100%;
@@ -175,7 +175,7 @@ ul {
       flex-wrap: wrap;
   margin-left: 30px;
 }
-.contact-nav .contact-nav__nav .contact-nav__link-address {
+.contact-nav .contact-nav__nav .contact-nav__link--address {
   color: #757575;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -185,15 +185,15 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-nav .contact-nav__nav .contact-nav__link-address:hover {
+.contact-nav .contact-nav__nav .contact-nav__link--address:hover {
   color: #2196f3;
   fill: #2196f3;
 }
-.contact-nav .contact-nav__nav .contact-nav__link-address:focus {
+.contact-nav .contact-nav__nav .contact-nav__link--address:focus {
   color: #2196f3;
   fill: #2196f3;
 }
-.contact-nav .contact-nav__nav .contact-nav__link-address .contact-nav__icon {
+.contact-nav .contact-nav__nav .contact-nav__link--address .contact-nav__icon {
   margin-right: 10px;
 }
 
@@ -298,7 +298,7 @@ ul {
       flex-basis: calc((100% - 30px) / 4);
 }
 
-.lorem__header-text {
+.lorem__header--text {
   text-align: left;
   width: 270px;
   font-family: "Roboto", sans-serif;
@@ -500,7 +500,7 @@ ul {
   }
 }
 
-.client .client-header {
+.client .client__header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -525,7 +525,7 @@ ul {
   margin-bottom: 50px;
   padding-top: 94px;
 }
-.client .our-client {
+.client .client__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,7 +533,7 @@ ul {
   padding-bottom: 94px;
   list-style: none;
 }
-.client .our-client .client-svg {
+.client .client__list .client__svg {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -549,14 +549,14 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client .our-client .client-svg:hover, .client .our-client .client-svg:focus {
+.client .client__list .client__svg:hover, .client .client__list .client__svg:focus {
   background-color: #fff;
   border-color: #2196f3;
 }
-.client .our-client .client-svg:hover .our-svg {
+.client .client__list .client__svg:hover .client--img {
   fill: #2196f3;
 }
-.client .our-client .client-svg .our-svg {
+.client .client__list .client__svg .client--img {
   margin: auto;
   fill: #afb1b8;
   -webkit-transition-property: fill;
@@ -567,7 +567,7 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-one {
+.footer {
   background-color: #2f303a;
   height: 252px;
   padding-bottom: 60px;
@@ -583,11 +583,11 @@ ul {
       align-content: flex-start;
   padding-top: 60px;
 }
-.footer-one .navigation-footer {
+.footer .footer__nav {
   margin-left: 0;
   margin-right: 0;
 }
-.footer-one .navigation-footer .navigation__logo {
+.footer .footer__nav .footer__logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19em;
@@ -603,16 +603,16 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-one .navigation-footer .navigation__logo:hover {
+.footer .footer__nav .footer__logo:hover {
   color: #2f303a;
 }
-.footer-one .navigation-footer .navigation__logo .navigation__logo--web {
+.footer .footer__nav .footer__logo .footer__logo--web {
   color: #2196f3;
 }
-.footer-one .navigation-footer .one-white {
+.footer .footer__nav .footer--white {
   color: #fff;
 }
-.footer-one .logo-address {
+.footer .footer__address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71em;
@@ -623,7 +623,7 @@ ul {
   padding-top: 20px;
   font-style: normal;
 }
-.footer-one .logo-address .logo-address__contact-footer {
+.footer .footer__address .footer__address--contact {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: 400;
@@ -632,20 +632,20 @@ ul {
   list-style: none;
   font-family: "Roboto", sans-serif;
 }
-.footer-one .logo-address .logo-address__nav_footer {
+.footer .footer__address .footer__address--list {
   line-height: 1.14em;
   letter-spacing: 0.02em;
   list-style: none;
   padding-top: 9px;
 }
-.footer-one .logo-address .logo-address__link-address {
+.footer .footer__address .footer__address--link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-one .social-media {
+.footer .footer__social {
   margin-left: 70px;
 }
-.footer-one .social-media .footer-second {
+.footer .footer__social .footer__social--heading {
   padding-top: 5px;
   font-weight: 700;
   font-size: 14px;
@@ -654,10 +654,10 @@ ul {
   text-transform: uppercase;
   color: #fff;
 }
-.footer-one .social-media .list {
+.footer .footer__social .footer__social--list {
   list-style: none;
 }
-.footer-one .social-media .list .footer-svg {
+.footer .footer__social .footer__social--list .footer__social--svg {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1019607843);
@@ -673,28 +673,28 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-one .social-media .list .footer-svg:hover, .footer-one .social-media .list .footer-svg:focus {
+.footer .footer__social .footer__social--list .footer__social--svg:hover, .footer .footer__social .footer__social--list .footer__social--svg:focus {
   background-color: var(--blue);
   cursor: pointer;
 }
-.footer-one .social-media .list .footer-svg .footer-img {
+.footer .footer__social .footer__social--list .footer__social--svg .footer__social--img {
   margin: auto;
   fill: #fff;
 }
-.footer-one .social-media h5 {
+.footer .footer__social h5 {
   font-size: 14px;
   margin-bottom: 20px;
   line-height: 1.13em;
   font-weight: 700;
 }
-.footer-one .social-media ul {
+.footer .footer__social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
 
-.footer-newsletter {
+.footer__newsletter {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -714,7 +714,7 @@ ul {
   letter-spacing: 0.06em;
   color: #fff;
 }
-.footer-newsletter .footer-second {
+.footer__newsletter .footer__newsletter--heading {
   padding-top: 5px;
   font-weight: 700;
   font-size: 14px;
@@ -723,7 +723,7 @@ ul {
   text-transform: uppercase;
   color: #fff;
 }
-.footer-newsletter .form-newsletter {
+.footer__newsletter .footer__newsletter--form {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -733,7 +733,7 @@ ul {
           align-items: center;
   text-align: center;
 }
-.footer-newsletter .form-newsletter .input-newsletter {
+.footer__newsletter .footer__newsletter--form .footer__newsletter--input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -745,7 +745,7 @@ ul {
   background: #2f303a;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-newsletter .form-newsletter .button-newsletter {
+.footer__newsletter .footer__newsletter--form .footer__newsletter--button {
   background-color: #2196f3;
   width: 200px;
   height: 50px;
@@ -762,7 +762,7 @@ ul {
   color: #fff;
   margin-left: 12px;
 }
-.footer-newsletter .form-newsletter .icon-button-newsletter {
+.footer__newsletter .footer__newsletter--form .footer__newsletter--icon {
   fill: #fff;
 }
 
@@ -891,7 +891,7 @@ ul {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.list .list__img .list__img--box > .list__img--box--label {
+.list .list__img .list__img--box > .list__img--box-label {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
@@ -915,7 +915,7 @@ ul {
   -webkit-transition: opacity 250ms ease, visibility 550ms ease;
   transition: opacity 250ms ease, visibility 550ms ease;
 }
-.backdrop .backdrop-modal {
+.backdrop .backdrop__modal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -931,7 +931,7 @@ ul {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.backdrop .backdrop-modal .button-close {
+.backdrop .backdrop__modal .backdrop__button {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -942,10 +942,10 @@ ul {
   border: 2px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.backdrop .backdrop-modal .close {
+.backdrop .backdrop__modal .backdrop__button .backdrop__svg {
   padding: 4px;
 }
-.backdrop .backdrop-modal .formik .modal-header {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--heading {
   font-weight: 700;
   font-size: 20px;
   line-height: 2.3rem;
@@ -955,7 +955,7 @@ ul {
   margin-top: 40px;
   margin-left: 40px;
 }
-.backdrop .backdrop-modal .formik .modal-label {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -964,14 +964,14 @@ ul {
   margin-top: 12px;
   margin-left: 40px;
 }
-.backdrop .backdrop-modal .formik .modal-label .modal-icon {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--icon {
   position: relative;
   fill: #212121;
   height: 12px;
   width: 12px;
   right: 435px;
 }
-.backdrop .backdrop-modal .formik .modal-label .modal-input {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--input {
   height: 40px;
   width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -985,65 +985,58 @@ ul {
   margin-bottom: 10px;
   padding: 0 0 0 42px;
 }
-.backdrop .backdrop-modal .formik .modal-label .modal-input::-webkit-input-placeholder {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.backdrop .backdrop-modal .formik .modal-label .modal-input::-moz-placeholder {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--input::-moz-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.backdrop .backdrop-modal .formik .modal-label .modal-input:-ms-input-placeholder {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.backdrop .backdrop-modal .formik .modal-label .modal-input::-ms-input-placeholder {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.backdrop .backdrop-modal .formik .modal-label .modal-input::placeholder {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.backdrop .backdrop-modal .formik .modal-label .modal-input:hover, .backdrop .backdrop-modal .formik .modal-label .modal-input:focus {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--input:hover, .backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--input:focus {
   border: 1px solid #2196f3;
 }
-.backdrop .backdrop-modal .formik .modal-label .modal-input:focus-within + .modal-icon, .backdrop .backdrop-modal .formik .modal-label .modal-input:hover + .modal-icon {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--input:focus-within + .backdrop__form--icon, .backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--input:hover + .backdrop__form--icon {
   fill: #2196f3;
 }
-.backdrop .backdrop-modal .formik .modal-label .modal-feedback {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--feedback {
   width: 448px;
   height: 120px;
   resize: none;
   padding-top: 12px;
   padding-left: 16px;
 }
-.backdrop .backdrop-modal .formik .modal-label .no-margin-bottom {
+.backdrop .backdrop__modal .backdrop__form .backdrop__form--label .backdrop__form--margin {
   margin-bottom: 0%;
 }
-.backdrop .backdrop-modal .modal-icon-checkbox {
-  margin-right: 8px;
-  margin-left: 55px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  fill: #fff;
-}
-.backdrop .backdrop-modal .agreement {
+.backdrop .backdrop__modal .backdrop__label {
   position: relative;
   font-weight: 400;
   font-size: 14px;
@@ -1062,7 +1055,14 @@ ul {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.backdrop .backdrop-modal .modal-checkbox::before {
+.backdrop .backdrop__modal .backdrop__label .backdrop__form--checkbox {
+  margin-right: 8px;
+  margin-left: 55px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  fill: #fff;
+}
+.backdrop .backdrop__modal .backdrop__label .backdrop__form--checkbox::before {
   background-color: #fff;
   margin-right: 8px;
   margin-left: 55px;
@@ -1070,19 +1070,19 @@ ul {
   border-radius: 2px;
   fill: #fff;
 }
-.backdrop .backdrop-modal .modal-checkbox:checked + .modal-icon-checkbox {
+.backdrop .backdrop__modal .backdrop__label .backdrop__form--checkbox:checked + .backdorp__form--icon-checkbox {
   border: none;
   background-color: #2196f3;
   background-image: url(../images/Vector.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
-.backdrop .backdrop-modal .hidden {
+.backdrop .backdrop__modal .backdrop__label .backdrop__form--checkbox .backdrop__form--hidden {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
 }
-.backdrop .backdrop-modal .button-send {
+.backdrop .backdrop__modal .backdrop__form--button {
   font-family: "Roboto", sans-serif;
   background-color: #2196f3;
   border-radius: 4px;
@@ -1109,7 +1109,7 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden {
+.backdrop--hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

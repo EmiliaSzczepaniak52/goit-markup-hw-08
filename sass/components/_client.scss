@@ -1,5 +1,5 @@
 .client{
-    .client-header {
+    .client__header {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
@@ -24,12 +24,12 @@
     margin-bottom: 50px;
     padding-top: 94px;
 }
-.our-client {
+.client__list {
     display: flex;
     gap: 30px;
     padding-bottom: 94px;
     list-style: none;
-    .client-svg {
+    .client__svg {
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
@@ -46,10 +46,10 @@
     background-color: $white;
     border-color: $blue;
     }
-    &:hover .our-svg {
+    &:hover .client--img {
     fill: $blue;
     }
-        .our-svg {
+        .client--img {
          margin: auto;
          fill: #afb1b8;
          transition-property: fill;
