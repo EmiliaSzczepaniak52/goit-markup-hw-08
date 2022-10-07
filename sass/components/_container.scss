@@ -6,11 +6,6 @@
     display: flex;
     flex-wrap: wrap;
 
-    .item-main > .container {
-        flex-direction: column;
-        align-content: center;
-    }
-
     @media screen and (min-width: 480px) {
         .container {
             max-width: 480px;
@@ -35,4 +30,8 @@
             padding-right: 215px;
         }
     }
+}
+.item-main > .container {
+    flex-direction: column;
+    align-content: center;
 }

@@ -18,24 +18,28 @@
     </head>
     <body>
         <header>
-            <div class="container container--header">
+           <div class="container container--header">
                 <nav class="navigation">
                     <a class="navigation__logo" href="./index.html">
-                            <span class="navigation__logo--web">Web</span>Studio
+                        <span class="navigation__logo--web">Web</span>Studio
                     </a>
                     <ul class="navigation__list">
-                        <li class="navigation__list--nav ">
-                                <a href="./index.html" class="navigation__link"
-                                    >Agencja</a
-                                >
-                        </li>
-                        <li class="navigation__list--nav">
-                            <a href="./portfolio.html" class="navigation__link navigation__link--underline"
-                                    >Portfolio</a
+                        <li class="navigation__list-item">
+                            <a
+                                href="./index.html"
+                                class="navigation__link navigation__link--underline"
+                                >Agencja</a
                             >
                         </li>
-                        <li class="navigation__list--nav">
-                            <a href="kontakt.html" class="navigation__link">Kontakt</a>
+                        <li class="navigation__list-item">
+                            <a href="./portfolio.html" class="navigation__link"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="kontakt.html" class="navigation__link"
+                                >Kontakt</a
+                            >
                         </li>
                     </ul>
                 </nav>
@@ -43,29 +47,49 @@
                     <li class="contact-nav__nav">
                         <div class="contacy-nav__link">
                             <a
-                            href="emailto:info@example.com"
-                            class="contact-nav__link--address"
+                                href="emailto:info@example.com"
+                                class="contact-nav__link--address"
                             >
-                            <svg class="contact-nav__icon" width="16" height="12">
-                            <use
-                            href="./images/icons.svg#envelope"
-                            ></use>
-                            </svg>
+                                <svg
+                                    class="contact-nav__icon"
+                                    width="16"
+                                    height="12"
+                                >
+                                    <use
+                                        href="./images/icons.svg#envelope"
+                                    ></use>
+                                </svg>
                                 info@devstudio.com
                             </a>
                         </div>
                     </li>
                     <li class="contact-nav__nav">
                         <div class="contact-nav__nav">
-                            <a href="tel:+48111111111" class="contact-nav__link--address">
-                            <svg class="contact-nav__icon" width="10" height="16">
-                            <use href="./images/icons.svg#vector"></use>
-                            </svg>
-                             +48 111 111 111
+                            <a
+                                href="tel:+48111111111"
+                                class="contact-nav__link--address"
+                            >
+                                <svg
+                                    class="contact-nav__icon"
+                                    width="10"
+                                    height="16"
+                                >
+                                    <use href="./images/icons.svg#vector"></use>
+                                </svg>
+                                +48 111 111 111
                             </a>
                         </div>
                     </li>
                 </ul>
+                <button
+                    class="header__mobile js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg class="header__mobile-menu" width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </div>
         </header>
         <main>
@@ -118,7 +142,8 @@
                                     <div class="description-image">
                                         <img
                                             class="ptf-img"
-                                            src="images/ptf1.jpg"
+                                            src="./images/ptf1.jpg"
+                                            srcset="./images/ptf1@2x.jpg"
                                             alt="technocrak"
                                             width="370"
                                             height="294"
@@ -149,7 +174,8 @@
                                     <div class="description-image">
                                      <img
                                             class="ptf-img"
-                                            src="images/ptf2.jpg"
+                                            src="./images/ptf2.jpg"
+                                            srcset="./images/ptf2@2x.jpg"
                                             alt="grafika-dizajn"
                                             width="370"
                                             height="294"
@@ -182,7 +208,8 @@
                                         <div class="description-image">
                                         <img
                                             class="ptf-img"
-                                            src="images/ptf3.jpg"
+                                            src="./images/ptf3.jpg"
+                                            srcset="./images/ptf3@2x.jpg"
                                             alt="restauracja"
                                             width="370"
                                             height="294"
@@ -214,7 +241,8 @@
                                         <div class="description-image">
                                         <img
                                             class="ptf-img"
-                                            src="images/ptf4.jpg"
+                                            src="./images/ptf4.jpg"
+                                            srcset="./images/ptf4@2x.jpg"
                                             alt="grafika-dizajn"
                                         />
                                           <div class="hidden-view">
@@ -244,7 +272,8 @@
                                     <div class="description-image">
                                         <img
                                             class="ptf-img"
-                                            src="images/ptf5.jpg"
+                                            src="./images/ptf5.jpg"
+                                            srcset="./images/ptf5@2x.jpg"
                                             alt="grafika-dizajn"
                                         />
                                           <div class="hidden-view">
@@ -271,11 +300,13 @@
                             </li>
 
                             <li class="card__list">
-                                <div class="description-image">
-                                    <figure>
+                               <figure>
+                                  <div class="description-image">
+                               
                                         <img
                                             class="ptf-img"
-                                            src="images/ptf6.jpg"
+                                            src="./images/ptf6.jpg"
+                                            srcset="./images/ptf6@2x.jpg"
                                             alt="grafika-dizajn"
                                         />
                                           <div class="hidden-view">
@@ -288,8 +319,9 @@
                                                 na niezabezpieczone serwery
                                                 konkurencji
                                             </p>
-                                         </div>
-                                </div>
+                                        </div>'
+                                    </div>'
+                             
                                 <figcaption>
                                             <h4 class="fig-frist">
                                                 Grafika New Orlean vs Golden
@@ -305,12 +337,13 @@
                                     <div class="description-image">
                                         <img
                                             class="ptf-img"
-                                            src="images/ptf7.jpg"
+                                            src="./images/ptf7.jpg"
+                                            srcset="./images/ptf7@2x.jpg"
                                             alt="grafika-dizajn"
                                             width="370"
                                             height="294"
                                         />
-                                    <div class="hidden-view">
+                                     <div class="hidden-view">
                                             <p class="hidden-text">
                                                 Technocrack jest popularną
                                                 platformą wykorzystywaną do
@@ -337,7 +370,8 @@
                                     <div class="description-image">
                                         <img
                                             class="ptf-img"
-                                            src="images/ptf8.jpg"
+                                            src="./images/ptf8.jpg"
+                                            srcset="./images/ptf8@2x.jpg"
                                             alt="grafika-dizajn"
                                             width="370"
                                             height="294"
@@ -362,7 +396,7 @@
                                             <p class="fig-second">Dizajn</p>
                                         </figcaption>
                                     </figure>
-                                </a>
+                                
                             </li>
 
                             <li class="card__list">
@@ -370,7 +404,8 @@
                                     <figure>
                                         <img
                                             class="ptf-img"
-                                            src="images/ptf9.jpg"
+                                            src="./images/ptf9.jpg"
+                                            srcset="./images/ptf9@2x.jpg"
                                             alt="grafika-dizajn"
                                             width="370"
                                             height="294"

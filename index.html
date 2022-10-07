@@ -91,6 +91,15 @@
                         </div>
                     </li>
                 </ul>
+                <button
+                    class="header__mobile js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg class="header__mobile-menu" width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </div>
         </header>
         <main>
@@ -158,8 +167,8 @@
                     </ul>
                 </div>
             </section>
-            <section class="list section">
-                <div class="container">
+            <section class="list section mobile-hidden">
+                <div class="mobile-hidden__container">
                     <h2 class="list__header">Czym się zajmujemy?</h2>
                     <ul class="list__img">
                         <li class="list__img--box">
@@ -702,7 +711,8 @@
                             type="text"
                             name="user-name"
                             required
-                            class="backdrop__form--input" />
+                            class="backdrop__form--input"
+                        />
                         <svg
                             class="backdrop__form--icon"
                             width="12px"
@@ -710,15 +720,18 @@
                         >
                             <use
                                 href="./images/icons.svg#icon-person-vector"
-                            ></use></svg
-                    ></label>
+                            ></use>
+                        </svg>
+                        ></label
+                    >
                     <label class="backdrop__form--label"
                         >Telefon
                         <input
                             type="tel"
                             name="user-tel"
                             required
-                            class="backdrop__form--input" />
+                            class="backdrop__form--input"
+                        />
                         <svg
                             class="backdrop__form--icon"
                             width="12px"
@@ -726,15 +739,18 @@
                         >
                             <use
                                 href="./images/icons.svg#icon-telephone-vector"
-                            ></use></svg
-                    ></label>
+                            ></use>
+                        </svg>
+                        ></label
+                    >
                     <label class="backdrop__form--label"
                         >Email
                         <input
                             type="email"
                             name="user-email"
                             required
-                            class="backdrop__form--input" />
+                            class="backdrop__form--input"
+                        />
                         <svg
                             class="backdrop__form--icon"
                             width="12px"
@@ -742,8 +758,10 @@
                         >
                             <use
                                 href="./images/icons.svg#icon-email-vector"
-                            ></use></svg
-                    ></label>
+                            ></use>
+                        </svg>
+                        ></label
+                    >
                     <label class="backdrop__form--label"
                         >Komentarz
                         <textarea
@@ -783,6 +801,52 @@
                 </form>
             </div>
         </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      <svg height="18.67px" width="18.67px" class="mobile__exit">
+        <use href="./images/icons.svg#icon-close">
+        </use>
+      </svg>
+      </button>
+      <div>
+      <ul class="mobile-menu list-pages">
+        <li>
+         <a href="./index.html" class="list-pages__link active">Agencja</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="list-pages__link">Portfolio</a>
+        </li>
+        <li>
+          <a class="list-pages__link">Kontakt</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu list-contacts">
+          <li>
+            <a href="tel:+48111111111" class="list-contacts__phone">+48 111 111 111</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="list-contacts__mail">info@devstudio.com</a>
+          </li>
+      </ul>
+        <ul class="mobile-menu list-social">
+            <a href="https://instagram.com" class="list-social__item--link">Instagram</a>
+          </li>
+          <li class="list-social__item"></li>
+          <li>
+            <a href="https://twitter.com" class="list-social__item--link">Twitter</a>
+          </li>
+          <li class="list-social__item"></li>
+          <li>
+            <a href="https://facebook.com" class="list-social__item--link">Facebook</a>
+          </li>
+          <li class="list-social__item"></li>
+          <li>
+            <a href="https://linkedin.com" class="list-social__item--link">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
