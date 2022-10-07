@@ -29,85 +29,82 @@
             background-color: $white;
             border: 2px solid rgba(0, 0, 0, 0.1);
             cursor: pointer;
-       
-        .backdrop__svg {
-            padding: 4px;
+
+            .backdrop__svg {
+                padding: 4px;
+            }
         }
-                        }
         .backdrop__form {
             .backdrop__form--heading {
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 2.3rem;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color:$dark1;
-            margin-top: 40px;
-            margin-left: 40px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 2.3rem;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: $dark1;
+                margin-top: 40px;
+                margin-left: 40px;
             }
             .backdrop__form--label {
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 1.17;
-            letter-spacing: 0.01em;
-            color:$grey1;
-            margin-top: 12px;
-            margin-left: 40px;
-                .backdrop__form--icon {
-                position: relative;
-                fill: #212121;
-                height: 12px;
-                width: 12px;
-                right: 435px;
-                 }
-                
-                 .backdrop__form--input {
-                height: 40px;
-                width: 448px;
-                border: 1px solid rgba(33, 33, 33, 0.2);
-                border-radius: 4px;
-                color:$dark1;
+                font-weight: 400;
                 font-size: 12px;
-                letter-spacing: 0.03em;
-                line-height: 1.25;
+                line-height: 1.17;
+                letter-spacing: 0.01em;
+                color: $grey1;
+                margin-top: 12px;
                 margin-left: 40px;
-                margin-top: 4px;
-                margin-bottom: 10px;
-                padding: 0 0 0 42px;
-              
-                &::placeholder {
-                 font-weight: 400;
-                 font-size: 12px;
-                 line-height: 14px;
-                 letter-spacing: 0.01em;
-                 color: rgba(117, 117, 117, 0.5);
+                .backdrop__form--icon {
+                    position: relative;
+                    fill: #212121;
+                    height: 12px;
+                    width: 12px;
+                    right: 435px;
                 }
-                &:hover,
-                 &:focus {
-                 border: 1px solid $blue;
-                 }
-                 &:focus-within + .backdrop__form--icon,
-                 &:hover + .backdrop__form--icon {
-                fill:$blue;
-                                        } 
-                }
-                     
-                 .backdrop__form--feedback {
-                 width: 448px;
-                 height: 120px;
-                 resize: none;
-                 padding-top: 12px;
-                 padding-left: 16px;
-                  }
-                 .backdrop__form--margin {
-                 margin-bottom: 0%;
-                 }
-             }
-  }
-      
-       
 
-       
+                .backdrop__form--input {
+                    height: 40px;
+                    width: 448px;
+                    border: 1px solid rgba(33, 33, 33, 0.2);
+                    border-radius: 4px;
+                    color: $dark1;
+                    font-size: 12px;
+                    letter-spacing: 0.03em;
+                    line-height: 1.25;
+                    margin-left: 40px;
+                    margin-top: 4px;
+                    margin-bottom: 10px;
+                    padding: 0 0 0 42px;
+
+                    &::placeholder {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        letter-spacing: 0.01em;
+                        color: rgba(117, 117, 117, 0.5);
+                    }
+                    &:hover,
+                    &:focus {
+                        border: 1px solid $blue;
+                    }
+                    &:focus-within + .backdrop__form--icon,
+                    &:hover + .backdrop__form--icon {
+                        fill: $blue;
+                    }
+                }
+
+                .backdrop__form--feedback {
+                    width: 448px;
+                    height: 120px;
+                    resize: none;
+                    padding-top: 12px;
+                    padding-left: 16px;
+                }
+                .backdrop__form--margin {
+                    margin-bottom: 0%;
+                }
+            }
+        }
+
         .backdrop__label {
             position: relative;
             font-weight: 400;
@@ -129,37 +126,36 @@
                 border: 2px solid $dark1;
                 border-radius: 2px;
                 fill: $white;
-          
-     
+
                 &::before {
-                background-color: $white;
-                margin-right: 8px;
-                margin-left: 55px;
-                border: 2px solid $dark1;
-                border-radius: 2px;
-                fill: $white;
+                    background-color: $white;
+                    margin-right: 8px;
+                    margin-left: 55px;
+                    border: 2px solid $dark1;
+                    border-radius: 2px;
+                    fill: $white;
                 }
                 &:checked + .backdorp__form--icon-checkbox {
-                border: none;
-                background-color:$blue;
-                background-image: url(../images/Vector.svg);
-                background-repeat: no-repeat;
-                background-position: center;
+                    border: none;
+                    background-color: $blue;
+                    background-image: url(../images/Vector.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
                 }
-        .backdrop__form--hidden {
-            -moz-appearance: none;
-            -webkit-appearance: none;
-            appearance: none;
+                .backdrop__form--hidden {
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    appearance: none;
+                }
+            }
         }
-    }
-    }
         .backdrop__form--button {
             font-family: $font;
-            background-color:$blue;
+            background-color: $blue;
             border-radius: 4px;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             cursor: pointer;
-            color:$white;
+            color: $white;
             width: 200px;
             height: 50px;
             font-weight: 700;
@@ -172,6 +168,37 @@
             transition-property: color, background-color, box-shadow;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .backdrop {
+            &__container {
+                max-width: 528px;
+                min-height: 581px;
+                padding: 0;
+                @include set-flex(column, none, center);
+                gap: 10px;
+            }
+            &__button {
+                margin: 0;
+                left: 240px;
+            }
+            &__form--heading {
+                margin-bottom: 12px;
+                display: flex;
+                justify-content: center;
+                margin-top: 0;
+            }
+            &__form--input {
+                width: 448px;
+            }
+            &__form--feedback {
+                width: 448px;
+            }
+            &__label {
+                @include font-styles(14px, 400, 0.03em);
+            }
         }
     }
 }

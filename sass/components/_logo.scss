@@ -7,43 +7,73 @@
             rgba(47, 48, 58, 0.4) 100%
         ),
         url("../images/img.jpg");
-}
-.item-main__title {
-    flex: block;
-    font-size: 44px;
-    line-height: 1.36em;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white;
-    font-weight: 900;
-    width: 696px;
-    height: 120px;
-    text-align: center;
-}
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: difference;
+    background-color: $dark1;
+    width: 100%;
+    min-width: 304px;
 
-.item-main__box {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 3px;
-    border-width: 0;
-    background-color: #3086d2;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: $white;
-    cursor: pointer;
-    font-family: $font;
-    width: 200px;
-    height: 50px;
-    margin-top: 30px;
-    margin-left: 200px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &__title {
+        flex: block;
+        font-size: 44px;
+        line-height: 1.36em;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $white;
+        font-weight: 900;
+        width: 696px;
+        height: 120px;
+        text-align: center;
+    }
 
-    &:hover {
+    &__box {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        border-width: 0;
+        background-color: #3086d2;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $white;
         cursor: pointer;
-        background-color: $blue;
+        font-family: $font;
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 200px;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            cursor: pointer;
+            background-color: $blue;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .item-main {
+            background-size: auto;
+            &__container {
+                padding: 200px 0;
+                width: 1200px;
+            }
+
+            &__title {
+                @include font-styles(44px, 900, 0.06cm);
+                line-height: 1.36;
+            }
+        }
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .item-main {
+            background-image: url("../images/img@2x.jpg");
+        }
     }
 }
