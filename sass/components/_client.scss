@@ -1,4 +1,6 @@
 .client {
+    min-width: 170px;
+    min-height: 92px;
     &__header {
         @include font-styles(36px, 700, 0.03em);
         line-height: 1.16;
@@ -9,43 +11,43 @@
         text-align: center;
         margin-top: 94px;
     }
-   &__list {
+    &__list {
         display: flex;
         gap: 30px;
         padding-bottom: 94px;
-        list-style: none;}
-   }
-        .client__svg {
-            width: 170px;
-            height: 92px;
-            border: 1px solid #afb1b8;
-            border-radius: 4px;
-            display: block;
-            fill: $grey1;
-            padding-left: 32px;
-            padding-top: 16px;
-            transition-property: border, fill;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover,
-            &:focus {
-                background-color: $white;
-                border-color: $blue;
-            }
-            &:hover .client--img {
-                fill: $blue;
-            }
-            .client--img {
-                margin: auto;
-                fill: #afb1b8;
-                transition-property: fill;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            }
-        
-   
+        list-style: none;
+    }
+}
+.client__svg {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: block;
+    fill: $grey1;
+    padding-left: 32px;
+    padding-top: 16px;
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $white;
+        border-color: $blue;
+    }
+    &:hover .client--img {
+        fill: $blue;
+    }
+    .client--img {
+        margin: auto;
+        fill: #afb1b8;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
     @media screan and (max-width: 480px) {
-        .client__svg{
+        .client__list {
             max-width: 320px;
             display: flex;
             flex-wrap: wrap;
@@ -55,7 +57,7 @@
     }
 
     @media screan and (min-width: 768px) and (max-width: 1200px) {
-        .client__svg{
+        .client__list {
             max-width: 768px;
             margin: 0 auto;
             padding-left: 15px;
@@ -65,11 +67,11 @@
     }
 
     @media screan and (min-width: 1200px) {
-        .client__svg{
+        .client__list {
             max-width: 1200px;
             margin: 0 auto;
             padding-left: 215px;
             padding-right: 215px;
         }
     }
-        }
+}
