@@ -109,7 +109,7 @@
         }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen (max-width: 1200px) {
         .team__he-she {
             display: flex;
             flex-direction: row;
