@@ -33,12 +33,24 @@
             background-color: rgba(47, 48, 58, 0.8);
         }
     }
-}
+
 .mobile-hidden {
     display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .mobile-hidden{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
     .mobile-hidden {
+        display: none;
+       
+    }
+}
+@media screen and (min-width: 1200px){
+     .mobile-hidden {
         display: block;
         padding: 94px 0;
         width: 1200px;
@@ -52,8 +64,8 @@
             line-height: 1.16;
             margin: 0;
         }
-        &__background {
-            background-color: $white;
-        }
+
     }
+        }
+
 }

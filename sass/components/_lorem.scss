@@ -6,26 +6,19 @@
 }
 
 .lorem__text {
-   
-font-family:$font;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71rem;
-letter-spacing: 0.03em;
-color:grey1;
-text-align: justify;
-flex-basis: calc((100% - 2 * 15px) / 4);
+    @include font-styles(14px, 400, 0.03em);
+    font-family: $font;
+    line-height: 1.71rem;
+    color: grey1;
+    text-align: justify;
+    flex-basis: calc((100% - 2 * 15px) / 4);
 }
 .lorem__header--text {
+    @include font-styles(14px, 700, 0.3em);
     text-align: left;
     width: 270px;
     font-family: $font;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
     line-height: 1.14em;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
 }
@@ -40,4 +33,53 @@ flex-basis: calc((100% - 2 * 15px) / 4);
     background-color: #f5f4fa;
     margin-bottom: 30px;
     list-style: none;
+}
+@media screan and (max-width: 480px) {
+    .lorem__icon {
+        max-width: 1200px;
+        margin: 5px;
+    }
+    .lorem__list {
+        max-width: 1200px;
+        margin: 5px;
+    }
+}
+
+@media screan and (min-width: 768px) and (max-width: 1px) {
+    .lorem{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+    }
+    .lorem__list {
+        max-width: 768px;
+        margin: 5px;
+           max-width: 768px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 70px;
+            padding-bottom: 15px;
+    }
+    .lorem__icon{
+            width: 70px;
+            height: 120px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            padding-top: 23px;
+}
+
+@media screan and (min-width: 1200px) {
+    .lorem__icon {
+        max-width: 1200px;
+        margin: 5px;
+    }
+    .lorem__list {
+        max-width: 1200px;
+        margin: 5px;
+    }
+}
 }

@@ -1,5 +1,5 @@
 .team {
-    background-color:$team;
+    background-color: $team;
     justify-content: center;
     .team__header {
         font-family: $font;
@@ -9,79 +9,116 @@
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
-        color:$dark1;
+        color: $dark1;
         margin: 0 auto;
         margin-bottom: 50px;
-        }
+    }
     .team__he-she {
-    display: flex;
-    gap: 30px;
+        display: flex;
+        gap: 30px;
+
         .team__our {
-        list-style: none;
-        width: 270px;
-        height: 428px;
-        background-color:$white;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-         border-radius: 0px 0px 4px 4px;
+            list-style: none;
+            width: 270px;
+            height: 428px;
+            background-color: $white;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+
             .team__person {
-            font-family:$font;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.19em;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color:$dark1;
-            padding-top: 30;
+                font-family: $font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.19em;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: $dark1;
+                padding-top: 30;
             }
             .team__our figcaption {
-            text-align: center;
-            justify-content: center;
-            padding: 30px 0;
-             }
-            .team__title-person {
-            font-family:$font;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.19em;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color:$grey1;
-            margin-top: 16px;
-            padding-bottom: 32px;
-             }
-            .team__list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            list-style: none;
-                .icon-social {
-                width: 44px;
-                height: 44px;
-                background-color:$white;
-                display: flex;
-                border-radius: 50%;
-                fill: #afb1b8;
-                margin: 0px;
+                text-align: center;
                 justify-content: center;
-                align-items: center;
-                transition: 250ms fill $transition,
-                250ms background-color var(--transition);
-
-                 &:hover,
-                &:focus {
-                background-color: $blue;
-                fill: $white;
-                }
-            .social {
-             padding: 0 32px 0 32px;
-             margin: 0;
+                padding: 30px 0;
             }
+            .team__title-person {
+                font-family: $font;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.19em;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: $grey1;
+                margin-top: 16px;
+                padding-bottom: 32px;
+            }
+            .team__list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                list-style: none;
+                .icon-social {
+                    width: 44px;
+                    height: 44px;
+                    background-color: $white;
+                    display: flex;
+                    border-radius: 50%;
+                    fill: #afb1b8;
+                    margin: 0px;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 250ms fill $transition,
+                        250ms background-color var(--transition);
+
+                    &:hover,
+                    &:focus {
+                        background-color: $blue;
+                        fill: $white;
+                    }
+                    .social {
+                        padding: 0 32px 0 32px;
+                        margin: 0;
+                    }
+                }
             }
         }
-    
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        .team__he-she {
+            flex-wrap: wrap;
+            gap: 30px;
+            flex-direction: row;
+        }
+        .team__our {
+            flex-basis: calc((100% - 1 * 30px));
+            display: block;
+            padding: 0;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .team__he-she {
+            flex-wrap: wrap;
+            gap: 30px;
+            flex-direction: row;
+        }
+        .team__our {
+            flex-basis: calc((100% - 1 * 30px) / 2);
+            display: block;
+            padding: 0;
+        }
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        .team__he-she {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+        .team__our {
+            display: flex;
+            flex-basis: calc((100% - 3 * 30px) / 4);
+            padding-bottom: 94px;
+        }
     }
 }
