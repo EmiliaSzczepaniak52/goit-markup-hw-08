@@ -1,64 +1,59 @@
-.container--header{
-    height: 80px;
+.header {
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+   
+}
+.header__logo {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 0;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    line-height: 1.19em;
+    color: black;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: $dark;
+    }
+}
+.header__logo--web {
+    color: $blue;
+}
 
-    .navigation {
+@media (max-width: 768px) {
+    .header {
+        width: 480px;
         display: flex;
-        margin-left: 0;
-        margin-right: 0;
-
-        .navigation__logo {
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 1.19em;
-            letter-spacing: 0.03em;
-            font-family: $fonttwo;
-            text-decoration: none;
-            color: $black;
-            margin: 0;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover {
-                color: $dark;
-            }
-            .navigation__logo--web {
-                color:$blue;
-            }
-
-        }
-     }           
-     }
-     
-     @media (max-width: 768px) {
-        .container--header {
-            width: 320px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin: 0px;
-        }
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 0px;
     }
+}
 
-    @media (min-width: 768px) and (max-width: 1023px) {
-        .container--header {
-            max-width: 768px;
-            margin: 0 auto;
-            padding-left: 15px;
-            padding-right: 15px;
-            background-clip: padding-box;
-        }
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container--header {
+        max-width: 768px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-clip: padding-box;
     }
+}
 
-    @media (min-width: 1024px) {
-        .container--header {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-left: 215px;
-            padding-right: 215px;
-        }
+@media (min-width: 1024px) {
+    .container--header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 215px;
+        padding-right: 215px;
     }
-
+}

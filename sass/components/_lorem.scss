@@ -1,74 +1,70 @@
 .lorem {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    min-width: 1170px;
-
-
-&__text {
+    gap: 100px;
+    min-width: 450px;
+}
+.lorem__list {
+      margin-bottom: 30px;
+      list-style: none;
+}
+.lorem__text {
     @include font-styles(14px, 400, 0.03em);
     font-family: $font;
     line-height: 1.71rem;
     color: grey1;
-    text-align: justify;
-    flex-basis: calc((100% - 2 * 15px) / 4);
-    min-width: 450px;
-    min-height: 50px;
-}
-&__header--text {
-    @include font-styles(14px, 700, 0.3em);
     text-align: left;
+    flex-basis: calc((100% - 2 * 15px) / 4);
+
+}
+.lorem__header {
+    @include font-styles(14px, 700, 0.3em);
+    text-align:center;
     width: 270px;
     font-family: $font;
     line-height: 1.14em;
     text-transform: uppercase;
     color: #212121;
 }
-&__icon {
-    margin-left: 102px;
-    margin-bottom: 110px;
-    margin-top: 25px;
-}
-&__list {
-    width: 270px;
+.lorem__icon {
+    display: flex;
+    width: 450px;
     height: 120px;
-    background-color: #f5f4fa;
-    margin-bottom: 30px;
-    list-style: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #f5f4fa;
 }
-}
+
 @media screen and (min-width: 768px) {
-  .lorem {
-      padding-bottom: 45px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-      align-items: center;
-      min-width: 768px;
-   
-  
-  }
-  .lorem__text{
-      flex-basis:calc((100% - 2 * 15px) );
-  }
+    .lorem {
+        padding-bottom: 45px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        min-width: 768px;
+    }
+    .lorem__text {
+        flex-basis: calc((100% - 2 * 15px));
+    }
 }
 
 @media screen and (min-width: 1200px) {
-  .lorem {
-    padding-bottom: 94px;
-    display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-      align-items: center;
-      width: 270px;
+    .lorem {
+        padding-bottom: 94px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
     }
-  
 
- .lorem__text{
-      flex-basis:calc((100% - 2 * 15px) );
-  }
+    .lorem__text {
+        flex-basis: calc((100% - 2 * 15px));
+    }
 }
