@@ -27,8 +27,11 @@
             .navigation__logo--web {
                 color:$blue;
             }
+
         }
-    }
+     }           
+     }
+     
      @media (max-width: 768px) {
         .container--header {
             width: 320px;
@@ -58,4 +61,4 @@
             padding-right: 215px;
         }
     }
-}
+

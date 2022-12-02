@@ -45,16 +45,16 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-
-    @media screan and (max-width: 480px) {
+@media screan and (max-width: 480px) {
         .client__list {
             max-width: 320px;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 144px;
             justify-content: center;
             margin: 0px;
         }
-    }
+    }         
 
     @media screan and (min-width: 768px) and (max-width: 1200px) {
         .client__list {

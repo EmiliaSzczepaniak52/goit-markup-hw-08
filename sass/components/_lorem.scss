@@ -48,11 +48,13 @@
       align-items: center;
       min-width: 768px;
    
-    $__text {
-      flex-basis: calc((100% - 2 * 15px) / 2);
-  } 
+  
+  }
+  .lorem__text{
+      flex-basis:calc((100% - 2 * 15px) );
+  }
 }
-}
+
 @media screen and (min-width: 1200px) {
   .lorem {
     padding-bottom: 94px;
@@ -66,7 +68,7 @@
     }
   
 
- $__text {
-      flex-basis: calc((100% - 2 * 15px) );
+ .lorem__text{
+      flex-basis:calc((100% - 2 * 15px) );
   }
 }
