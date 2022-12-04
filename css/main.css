@@ -908,35 +908,32 @@ body ul {
 }
 .footer {
   background-color: #2f303a;
-  height: 252px;
-  padding-bottom: 60px;
+  max-width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #fff;
+  margin-top: 60px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  margin-top: 60px;
-}
-
-.footer__nav {
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .footer__logo {
+  font-size: 24px;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19em;
   letter-spacing: 0.03em;
+  line-height: 1.19em;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   color: #000;
-  margin: 0;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -956,14 +953,14 @@ body ul {
 }
 
 .footer__address {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71em;
+  font-weight: 400;
   letter-spacing: 0.03em;
+  line-height: 1.71em;
   width: 246px;
   height: 81px;
   font-family: "Roboto", sans-serif;
-  padding-top: 20px;
+  margin-top: 20px;
   font-style: normal;
 }
 
