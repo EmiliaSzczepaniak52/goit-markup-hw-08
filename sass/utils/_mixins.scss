@@ -3,7 +3,7 @@
     font-weight: $weight;
     letter-spacing: $spacing;
   }
-  @mixin set-flex($flex-direction, $justify-content, $align-items) {
+@mixin set-flex($flex-direction, $justify-content, $align-items) {
     display: flex;
     flex-direction: $flex-direction;
     justify-content: $justify-content;
