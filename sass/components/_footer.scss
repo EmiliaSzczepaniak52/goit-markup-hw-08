@@ -110,11 +110,12 @@
 }
 
 .footer__newsletter {
-     display: flex;
+    display: flex;
     font-family: $font;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+    text-align: center;
     line-height: 1.88rem;
     flex-direction: column;
     justify-content: center;
@@ -148,6 +149,7 @@
     // margin-left: 78px;
     background: $dark;
     color: rgba(255, 255, 255, 0.6);
+
 }
 
 .footer__newsletter--button {
@@ -164,6 +166,8 @@
     line-height: 1.88rem;
     letter-spacing: 0.06em;
     color: $white;
+    margin-top:20px;
+    text-align: center;
 }
 .footer__newsletter--icon {
     fill: $white;

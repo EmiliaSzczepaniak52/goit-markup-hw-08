@@ -14,22 +14,8 @@ body {
     font-style: normal;
     font-weight: 500;
     background-color: $white;
-    max-width: 1600px;
     margin: auto;
-
-    // .container {
-    //     max-width: 1200px;
-    //     min-width: 320px;
-    //     margin: 0 auto;
-    //     padding-left: 15px;
-    //     padding-right: 15px;
-    //     display: flex;
-    //     flex-wrap: wrap;
-    // }
-    // .main > .container {
-    //     flex-direction: column;
-    //     align-content: center;
-    // }
+}
     h1,
     h2,
     h3,
@@ -37,25 +23,22 @@ body {
     p,
     ul {
         margin: 0;
-        padding: 0;
-    }
-    @media screan and (max-width: 480px) {
-        .container {
-            width: 320px;
+        padding: 0;  }
+    .container {
+            max-width: 480px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
             margin: 0px;
         }
-    }
+    
+   
 
     @media screan and (min-width: 768px) and (max-width: 1200px) {
         .container {
             max-width: 768px;
             margin: 0 auto;
-            padding-left: 15px;
-            padding-right: 15px;
             background-clip: padding-box;
         }
     }
@@ -68,4 +51,4 @@ body {
             padding-right: 215px;
         }
     }
-}
+

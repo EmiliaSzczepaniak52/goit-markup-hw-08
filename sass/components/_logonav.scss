@@ -8,12 +8,9 @@
     display: flex;
     margin-left: 15px;
     margin-right: 0;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
+    font-family: $fonttwo;
+    @include font-styles(24px, 700, 0.03em);
     line-height: 28px;
-    letter-spacing: 0.03em;
     line-height: 1.19em;
     color: black;
     text-decoration: none;

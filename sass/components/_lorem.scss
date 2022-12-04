@@ -45,18 +45,19 @@
 
 @media screen and (min-width: 768px) {
     .lorem {
-        padding-bottom: 45px;
+        padding-bottom: 60px;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center;
         align-items: center;
         min-width: 768px;
     }
-    .lorem__text {
-        flex-basis: calc((100% - 2 * 15px));
+    .lorem__list{
+        flex-basis: calc((100% - 2 * 15px)/2);
     }
+  
+    
 }
 
 @media screen and (min-width: 1200px) {

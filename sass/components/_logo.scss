@@ -1,20 +1,16 @@
 .main {
     height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(
-            0deg,
-            rgba(47, 48, 58, 0.4) 0%,
-            rgba(47, 48, 58, 0.4) 100%
-        ),
+    @include set-flex(column, center, center);
+     background-image:  linear-gradient(
+                0deg,
+                rgba(47, 48, 58, 0.4) 0%,
+                rgba(47, 48, 58, 0.4) 100%
+            ),
         url("../images/imgmobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: $white;
-    
 }
 .main__title {
     @include font-styles(26px, 900, 0.03em);
@@ -23,7 +19,6 @@
     text-transform: uppercase;
     color: $white;
     text-align: center;
-  
 }
 .main__box {
     width: 200px;
@@ -43,48 +38,48 @@
     display: block;
     margin-top: 30px;
 }
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+ @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
     .main {
         background-image: linear-gradient(
-                0deg,
-                rgba(47, 48, 58, 0.4) 0%,
-                rgba(47, 48, 58, 0.4) 100%
+                0deg,                rgba(47, 48, 58, 0.4) 0%,
+               rgba(47, 48, 58, 0.4) 100%
             ),
-            url("../images/imgmobile@2x.jpg");
-    }
+            url("../images/imgmobile@2x.jpg");    }
 }
 
 @media screen and(min-width:768px) {
+
     .main {
+        max-width: 768px;
+       
         background-image: linear-gradient(
                 0deg,
                 rgba(47, 48, 58, 0.4) 0%,
                 rgba(47, 48, 58, 0.4) 100%
             ),
-            url("../images/imgtablet1x.jpg");
-        padding-bottom: 118px;
+            url("../images/imgtablet@1x.jpg");
+        // padding-bottom: 94px;
         background-repeat: no-repeat;
         background-size: cover;
         flex-grow: 1;
         background-position: center;
         background-color: $dark;
-
-        &__title {
-            padding-top: 118px;
+         @include set-flex(row, center, center);
+    }
+        .main__title {
+            width:565px;
+            margin-top: 118px;
             font-family: Roboto;
-            font-weight: 900;
-            font-size: 26px;
+            @include font-styles(26px, 900, 0.06em);
             line-height: 1.62;
             text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
+             text-transform: uppercase;
             color: $white;
             margin: 0;
         }
-        &__box {
+       .main__box {
             width: 200px;
             height: 50px;
             background-color: #3086d2;
@@ -107,7 +102,7 @@
             margin-top: 30px;
         }
     }
-}
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
     screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
