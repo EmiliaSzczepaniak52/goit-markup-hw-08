@@ -8,10 +8,10 @@
 .footer__list {
     // margin-left: 0;
     // margin-right: 0;
-   
+
     display: flex;
     flex-direction: column;
-    
+    align-content: center;
 }
 .footer__logo {
     @include font-styles(24px, 700, 0.03em);
@@ -33,23 +33,22 @@
     color: $white;
 }
 
-.footer__address {
+.footer__address--one {
     @include font-styles(14px, 400, 0.03em);
     line-height: 1.71em;
-    width: 246px;
-    height: 81px;
     font-family: $font;
+    color: $white;
     margin-top: 20px;
     font-style: normal;
 }
 .footer__address--contact {
     color: rgba(255, 255, 255, 0.6);
+    @include font-styles(14px, 400, 0.03em);
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71em;
     list-style: none;
     font-family: $font;
+    text-align: center;
 }
 .footer__address--list {
     line-height: 1.14em;
@@ -63,7 +62,7 @@
 }
 
 .footer__social {
-    margin-left: 70px;
+    margin-top: 60px;
 }
 .footer__social--heading {
     padding-top: 5px;
@@ -72,6 +71,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: $white;
 }
 .footer__social--list {
@@ -110,17 +110,17 @@
 }
 
 .footer__newsletter {
+     display: flex;
     font-family: $font;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88rem;
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
     letter-spacing: 0.06em;
     color: $white;
+    margin-top: 20px;
 }
 .footer__newsletter--heading {
     padding-top: 5px;
@@ -130,12 +130,13 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $white;
+    text-align: center;
 }
 .footer__newsletter--form {
     margin-top: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
 }
 .footer__newsletter--input {
     width: 358px;
@@ -144,7 +145,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
-    margin-left: 78px;
+    // margin-left: 78px;
     background: $dark;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -163,7 +164,6 @@
     line-height: 1.88rem;
     letter-spacing: 0.06em;
     color: $white;
-    margin-left: 12px;
 }
 .footer__newsletter--icon {
     fill: $white;

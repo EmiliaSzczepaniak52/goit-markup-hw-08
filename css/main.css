@@ -924,6 +924,8 @@ body ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .footer__logo {
@@ -952,26 +954,27 @@ body ul {
   color: #fff;
 }
 
-.footer__address {
+.footer__address--one {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1.71em;
-  width: 246px;
-  height: 81px;
   font-family: "Roboto", sans-serif;
+  color: #fff;
   margin-top: 20px;
   font-style: normal;
 }
 
 .footer__address--contact {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-style: normal;
   line-height: 1.71em;
   list-style: none;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 .footer__address--list {
@@ -987,7 +990,7 @@ body ul {
 }
 
 .footer__social {
-  margin-left: 70px;
+  margin-top: 60px;
 }
 
 .footer__social--heading {
@@ -997,6 +1000,7 @@ body ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: #fff;
 }
 
@@ -1044,24 +1048,24 @@ body ul {
 }
 
 .footer__newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 0.06em;
   color: #fff;
+  margin-top: 20px;
 }
 
 .footer__newsletter--heading {
@@ -1072,17 +1076,11 @@ body ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+  text-align: center;
 }
 
 .footer__newsletter--form {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
 }
 
 .footer__newsletter--input {
@@ -1093,7 +1091,6 @@ body ul {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
-  margin-left: 78px;
   background: #2f303a;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1113,7 +1110,6 @@ body ul {
   line-height: 1.88rem;
   letter-spacing: 0.06em;
   color: #fff;
-  margin-left: 12px;
 }
 
 .footer__newsletter--icon {
