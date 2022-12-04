@@ -6,10 +6,12 @@
     color: $white;
     flex-direction: column;
     align-content: flex-start;
-    padding-top: 60px;
-    &__nav {
+    margin-top: 60px;
+}
+.footer__nav {
         margin-left: 0;
         margin-right: 0;
+}
         .footer__logo {
             font-weight: 700;
             font-size: 26px;
@@ -32,7 +34,7 @@
         .footer--white {
             color:$white;
         }
-    }
+    
     .footer__address {
         font-weight: 400;
         font-size: 14px;
@@ -42,7 +44,7 @@
         height: 81px;
         font-family:$font;
         padding-top: 20px;
-        font-style: normal;
+        font-style: normal;}
         .footer__address--contact {
             color: rgba(255, 255, 255, 0.6);
             font-style: normal;
@@ -62,10 +64,10 @@
             text-decoration: none;
             color: rgba(255, 255, 255, 0.6);
         }
-    }
+    
 
     .footer__social {
-        margin-left: 70px;
+        margin-left: 70px;}
         .footer__social--heading {
             padding-top: 5px;
             font-weight: 700;
@@ -76,7 +78,7 @@
             color:$white;
         }
         .footer__social--list {
-            list-style: none;
+            list-style: none;}
             .footer__social--svg {
                 width: 44px;
                 height: 44px;
@@ -96,9 +98,8 @@
                     margin: auto;
                     fill: $white;
                 }
-            }
-        }
-    }
+            }  
+    
     .footer__social h5 {
         font-size: 14px;
         margin-bottom: 20px;
@@ -109,7 +110,7 @@
         display: flex;
         gap: 10px;
     }
-}
+
 .footer__newsletter {
     font-family: $font;
     font-style: normal;
@@ -122,6 +123,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     color:$white;
+}
     .footer__newsletter--heading {
         padding-top: 5px;
         font-weight: 700;
@@ -135,7 +137,7 @@
         margin-top: 20px;
         display: flex;
         align-items: center;
-        text-align: center;
+        text-align: center;}
         .footer__newsletter--input{
             width: 358px;
             height: 50px;
@@ -167,7 +169,7 @@
         .footer__newsletter--icon {
             fill: $white;
         }
-    }
+    
 @media screen and (min-width: 768px) and (max-width: 1199px){
     
    .footer {
@@ -301,5 +303,5 @@
         .footer__paragraph--left{
             margin-left: 55px;
         }
-    }
+    
 

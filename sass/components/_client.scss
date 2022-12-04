@@ -1,23 +1,24 @@
 .client {
     min-width: 170px;
     min-height: 92px;
-    &__header {
-        @include font-styles(36px, 700, 0.03em);
+}
+.client__header {
+        @include font-styles(28px, 700, 0.03em);
         line-height: 1.16;
         margin: 0 auto 50px;
         font-family: $font;
         text-align: center;
         color: $dark1;
         text-align: center;
-        margin-top: 94px;
-    }
-    &__list {
-        display: flex;
+        margin-top: 60px;
+ }
+ .client__list {
+        display:flex;
+        flex-wrap: wrap;
         gap: 30px;
-        padding-bottom: 94px;
         list-style: none;
     }
-}
+
 .client__svg {
     width: 170px;
     height: 92px;
@@ -35,10 +36,11 @@
         background-color: $white;
         border-color: $blue;
     }
-    &:hover .client--img {
+}
+.client__svg:hover .client--img {
         fill: $blue;
     }
-    .client--img {
+ .client--img {
         margin: auto;
         fill: #afb1b8;
         transition-property: fill;
@@ -74,4 +76,3 @@
             padding-right: 215px;
         }
     }
-}
