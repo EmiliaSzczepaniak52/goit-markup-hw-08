@@ -77,10 +77,17 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    .team {
+        background-color: $team;
+        min-width: 480px;
+        display: wrap;
+    }
+
     .team__he-she {
         flex-wrap: wrap;
         gap: 30px;
         flex-direction: row;
+        height: 380px;
     }
     .team__our {
         flex-basis: calc((100% - 1 * 30px));
@@ -101,8 +108,8 @@
     }
     .team--img {
         display: flex;
-        width: 354px;
-        height: 374px;
+        width: 254px;
+        height: 274px;
         object-fit: contain;
     }
     .team {

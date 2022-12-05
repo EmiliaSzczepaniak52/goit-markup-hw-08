@@ -188,7 +188,7 @@ ul {
 .navigation__link--underline {
   position: relative;
   color: #000;
-  width: 53px;
+  width: 40px;
   border-bottom: 4px solid #fff;
   -webkit-transition-property: border-bottom;
   transition-property: border-bottom;
@@ -273,34 +273,38 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .navigation__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    list-style: none;
-    margin-left: 120px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .navigation__contact {
-    font-style: normal;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-style: normal;
     list-style: none;
     font-size: 14px;
     line-height: 1.14em;
@@ -735,6 +739,11 @@ ul {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .team {
+    background-color: #f5f4fa;
+    min-width: 480px;
+    display: wrap;
+  }
   .team__he-she {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -743,6 +752,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    height: 380px;
   }
   .team__our {
     -ms-flex-preferred-size: calc(100% - 30px);
@@ -771,8 +781,8 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 354px;
-    height: 374px;
+    width: 254px;
+    height: 274px;
     -o-object-fit: contain;
        object-fit: contain;
   }
