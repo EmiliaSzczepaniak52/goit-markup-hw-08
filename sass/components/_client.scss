@@ -1,23 +1,24 @@
 .client {
     min-width: 170px;
     min-height: 92px;
+    
 }
 .client__header {
-        @include font-styles(28px, 700, 0.03em);
-        line-height: 1.16;
-        margin: 0 auto 50px;
-        font-family: $font;
-        text-align: center;
-        color: $dark1;
-        text-align: center;
-        margin-top: 60px;
- }
- .client__list {
-        display:flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        list-style: none;
-    }
+    @include font-styles(28px, 700, 0.03em);
+    line-height: 1.16;
+    margin: 0 auto 50px;
+    font-family: $font;
+    text-align: center;
+    color: $dark1;
+    text-align: center;
+    margin-top: 60px;
+}
+.client__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+}
 
 .client__svg {
     width: 170px;
@@ -28,6 +29,7 @@
     fill: $grey1;
     padding-left: 32px;
     padding-top: 16px;
+    flex-basis: calc((100% - 1 * 30px)/2);
     transition-property: border, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -38,41 +40,30 @@
     }
 }
 .client__svg:hover .client--img {
-        fill: $blue;
+    fill: $blue;
+}
+.client--img {
+    margin: auto;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .client__list {
+        max-width: 767px;
+        gap: 144px;
+        justify-content: center;
+        margin: 0px;
     }
- .client--img {
-        margin: auto;
-        fill: #afb1b8;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-@media screan and (max-width: 480px) {
-        .client__list {
-            max-width: 320px;
-            display: flex;
-            flex-direction: row;
-            gap: 144px;
-            justify-content: center;
-            margin: 0px;
-        }
-    }         
+}
 
-    @media screan and (min-width: 768px) and (max-width: 1200px) {
-        .client__list {
-            max-width: 768px;
-            margin: 0 auto;
-            padding-left: 15px;
-            padding-right: 15px;
-            background-clip: padding-box;
-        }
+@media screan and (min-width: 768px) and (max-width: 1200px) {
+    .client__list {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-clip: padding-box;
     }
-
-    @media screan and (min-width: 1200px) {
-        .client__list {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-left: 215px;
-            padding-right: 215px;
-        }
-    }
+}

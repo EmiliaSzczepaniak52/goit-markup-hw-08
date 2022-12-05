@@ -8,7 +8,7 @@
     margin-bottom: 30px;
     list-style: none;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     padding-top: 10px, 15px;
     justify-content: center;
 }
@@ -20,8 +20,6 @@
     text-align: left;
     margin: 15px, auto;
     width: 380px;
-   
-
 }
 .lorem__header {
     padding-top: 30px;
@@ -53,26 +51,52 @@
         align-items: center;
         min-width: 768px;
     }
-    .lorem__list{
-        flex-basis: calc((100% - 2 * 15px)/2);
+    .lorem__list {
+        flex-basis: calc((100% - 2 * 15px) / 2);
     }
-  
-    
 }
 
 @media screen and (min-width: 1200px) {
     .lorem {
-        padding-bottom: 94px;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        gap: 30px;
-        justify-content: center;
-        align-items: center;
-        width: 270px;
+        gap: 10px;
+        width: 1170px;
     }
 
     .lorem__text {
-        flex-basis: calc((100% - 2 * 15px));
+        font-family: $font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71rem;
+        letter-spacing: 0.03em;
+        color: grey1;
+        text-align: justify;
+        flex-basis: calc((100% - 2 * 15px) / 4);
+    }
+    .lorem__header--text {
+        text-align: left;
+        width: 270px;
+        font-family: $font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14em;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #212121;
+    }
+    .lorem__icon {
+        margin-left: 102px;
+        margin-bottom: 30px;
+        margin-top: 25px;
+    }
+    .lorem__list {
+        width: 270px;
+        height: 120px;
+        background-color: #f5f4fa;
+        margin-bottom: 30px;
+        list-style: none;
     }
 }
