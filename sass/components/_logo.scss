@@ -1,59 +1,63 @@
-.main {
-    height: 400px;
-    @include set-flex(column, center, center);
-     background-image:  linear-gradient(
+@media (min-width: 320px) and (max-width: 768px) {
+    .main {
+        min-width: 320px;
+        height: 400px;
+        @include set-flex(column, center, center);
+        background-image: linear-gradient(
                 0deg,
                 rgba(47, 48, 58, 0.4) 0%,
                 rgba(47, 48, 58, 0.4) 100%
             ),
-        url("../images/imgmobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $white;
+            url("../images/imgmobile@1x.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: $white;
+    }
+    .main__title {
+        @include font-styles(26px, 900, 0.03em);
+        font-family: $font;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $white;
+        text-align: center;
+    }
+    .main__box {
+        width: 200px;
+        height: 50px;
+        background-color: #3086d2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        @include font-styles(16px, 700, 0.06em);
+        line-height: 42px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $white;
+        font-family: $font;
+        display: block;
+        margin-top: 30px;
+    }
 }
-.main__title {
-    @include font-styles(26px, 900, 0.03em);
-    font-family: $font;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white;
-    text-align: center;
-}
-.main__box {
-    width: 200px;
-    height: 50px;
-    background-color: #3086d2;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    @include font-styles(16px, 700, 0.06em);
-    line-height: 42px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: $white;
-    font-family: $font;
-    display: block;
-    margin-top: 30px;
-}
- @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
     .main {
         background-image: linear-gradient(
-                0deg,                rgba(47, 48, 58, 0.4) 0%,
-               rgba(47, 48, 58, 0.4) 100%
+                0deg,
+                rgba(47, 48, 58, 0.4) 0%,
+                rgba(47, 48, 58, 0.4) 100%
             ),
-            url("../images/imgmobile@2x.jpg");    }
+            url("../images/imgmobile@2x.jpg");
+    }
 }
 
-@media screen and(min-width:768px) {
-
+@media (min-width: 768px) and (max-width: 1200px) {
     .main {
-        max-width: 768px;
-       
+        min-width: 768px;
+        height: 400px;
         background-image: linear-gradient(
                 0deg,
                 rgba(47, 48, 58, 0.4) 0%,
@@ -66,42 +70,41 @@
         flex-grow: 1;
         background-position: center;
         background-color: $dark;
-         @include set-flex(row, center, center);
+        @include set-flex(row, center, center);
     }
-        .main__title {
-            width:565px;
-            margin-top: 118px;
-            font-family: Roboto;
-            @include font-styles(26px, 900, 0.06em);
-            line-height: 1.62;
-            text-align: center;
-             text-transform: uppercase;
-            color: $white;
-            margin: 0;
-        }
-       .main__box {
-            width: 200px;
-            height: 50px;
-            background-color: #3086d2;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
-            cursor: pointer;
-            border: none;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.88;
-            align-items: center;
-            text-align: center;
-            letter-spacing: 0.06em;
-            color: $white;
-            font-family: $font;
-            font-style: normal;
-            display: block;
-            align-items: center;
-            margin: 0 auto;
-            margin-top: 30px;
-        }
+    .main__title {
+        width: 565px;
+        font-family: Roboto;
+        @include font-styles(26px, 900, 0.06em);
+        line-height: 1.62;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        margin: 0;
     }
+    .main__box {
+        width: 200px;
+        height: 50px;
+        background-color: #3086d2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $white;
+        font-family: $font;
+        font-style: normal;
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
     screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
@@ -116,13 +119,10 @@
     }
 }
 
-@media screen and(min-width:1200px) {
+@media (min-width: 1200px) and (max-width: 1600px) {
     .main {
-        max-width: 1600px;
+        min-width: 1600px;
         height: 600px;
-        margin: 0 auto;
-        padding-bottom: 200px;
-
         background-image: linear-gradient(
                 0deg,
                 rgba(47, 48, 58, 0.4) 0%,
@@ -134,43 +134,40 @@
         flex-grow: 1;
         background-position: center;
         background-color: $dark;
-        &__heading {
-            font-weight: 900;
-            font-size: 44px;
-            line-height: 1.36;
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: $white;
-            width: 696px;
-            margin: 0 auto;
-            padding-top: 200px;
-        }
-        &__button {
-            width: 200px;
-            height: 50px;
-            background-color: #3086d2;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
-            cursor: pointer;
-            border: none;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.88;
-            align-items: center;
-            text-align: center;
-            letter-spacing: 0.06em;
-            color: $white;
-            font-family: $font;
-            font-style: normal;
-            display: block;
-            align-items: center;
-            margin: 0 auto;
-            margin-top: 30px;
-        }
+    }
+    .main__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $white;
+        padding-left: 320px;
+        padding-right: 320px;
+        width: 1596px;
+        margin: 0 auto;
+        // padding-top: 200px;
+    }
+    .main__box {
+        width: 200px;
+        height: 50px;
+        background-color: #3086d2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $white;
+        font-family: $font;
+        display: block;
+        margin-top: 30px;
     }
 }
-
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {

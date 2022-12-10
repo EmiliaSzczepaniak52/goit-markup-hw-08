@@ -1,11 +1,12 @@
 .header {
+    min-width: 480px;
     height: 60px;
-    display: flex;
-    align-items: center;
-   
+    @include set-flex(row, space-between, center);
+}
+.header__mobile {
+    margin: 10px;
 }
 .header__logo {
-    display: flex;
     margin-left: 15px;
     margin-right: 0;
     font-family: $fonttwo;
@@ -25,32 +26,27 @@
     color: $blue;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .header {
-        width: 480px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        min-width: 768px;
+        height: 80px;
         margin: 0px;
+        display: flex;
+    }
+    .header__mobile {
+        display: none;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .container--header {
-        max-width: 768px;
-        margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        background-clip: padding-box;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container--header {
-        max-width: 1200px;
-        margin: 0 auto;
+@media screen and (min-width: 1200px) {
+    .header {
+        max-width: 1600px;
+        height: 80px;
+        margin: 0;
         padding-left: 215px;
         padding-right: 215px;
+    }
+    .header__mobile {
+        display: none;
     }
 }

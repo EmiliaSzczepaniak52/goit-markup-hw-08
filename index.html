@@ -53,44 +53,38 @@
                         </li>
                     </ul>
 
-                    <ul class="navigation__contact mobile-hidden">
+                    <ul class="navigation__contact">
                         <li class="contact-nav__nav">
-                            <div class="contacy-nav__link">
-                                <a
-                                    href="emailto:info@example.com"
-                                    class="contact-nav__link--address"
+                            <a
+                                href="emailto:info@example.com"
+                                class="contact-nav__link--address"
+                            >
+                                <svg
+                                    class="contact-nav__icon"
+                                    width="16"
+                                    height="12"
                                 >
-                                    <svg
-                                        class="contact-nav__icon"
-                                        width="16"
-                                        height="12"
-                                    >
-                                        <use
-                                            href="./images/icons.svg#envelope"
-                                        ></use>
-                                    </svg>
-                                    info@devstudio.com
-                                </a>
-                            </div>
+                                    <use
+                                        href="./images/icons.svg#envelope"
+                                    ></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
                         </li>
                         <li class="contact-nav__nav">
-                            <div class="contact-nav__nav">
-                                <a
-                                    href="tel:+48111111111"
-                                    class="contact-nav__link--address"
+                            <a
+                                href="tel:+48111111111"
+                                class="contact-nav__link--address"
+                            >
+                                <svg
+                                    class="contact-nav__icon"
+                                    width="10"
+                                    height="16"
                                 >
-                                    <svg
-                                        class="contact-nav__icon"
-                                        width="10"
-                                        height="16"
-                                    >
-                                        <use
-                                            href="./images/icons.svg#vector"
-                                        ></use>
-                                    </svg>
-                                    +48 111 111 111
-                                </a>
-                            </div>
+                                    <use href="./images/icons.svg#vector"></use>
+                                </svg>
+                                +48 111 111 111
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -114,12 +108,14 @@
                     Zamów usługę
                 </button>
             </section>
-            <section class="section">
-                <ul class="lorem">
+            <section>
+                <ul class="lorem section">
                     <li class="lorem__list">
-                        <svg class="lorem__icon" width="70" height="70">
-                            <use href="./images/icons.svg#antenna"></use>
-                        </svg>
+                        <div class="lorem__img">
+                            <svg class="lorem__icon" width="70" height="70">
+                                <use href="./images/icons.svg#antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="lorem__header">Loren Ipsum</h3>
                         <p class="lorem__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing
@@ -128,9 +124,11 @@
                         </p>
                     </li>
                     <li class="lorem__list">
-                        <svg class="lorem__icon" width="70" height="70">
-                            <use href="./images/icons.svg#clock"></use>
-                        </svg>
+                        <div class="lorem__img">
+                            <svg class="lorem__icon" width="70" height="70">
+                                <use href="./images/icons.svg#clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="lorem__header">Loren Ipsum</h3>
                         <p class="lorem__text">
                             Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -139,9 +137,11 @@
                         </p>
                     </li>
                     <li class="lorem__list">
-                        <svg class="lorem__icon" width="70" height="70">
-                            <use href="./images/icons.svg#diagram"></use>
-                        </svg>
+                        <div class="lorem__img">
+                            <svg class="lorem__icon" width="70" height="70">
+                                <use href="./images/icons.svg#diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="lorem__header">Loren Ipsum</h3>
                         <p class="lorem__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing
@@ -150,9 +150,11 @@
                         </p>
                     </li>
                     <li class="lorem__list">
-                        <svg class="lorem__icon" width="70" height="70">
-                            <use href="./images/icons.svg#astronaut"></use>
-                        </svg>
+                        <div class="lorem__img">
+                            <svg class="lorem__icon" width="70" height="70">
+                                <use href="./images/icons.svg#astronaut"></use>
+                            </svg>
+                        </div>
                         <h3 class="lorem__header">Loren Ipsum</h3>
                         <p class="lorem__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing
@@ -205,7 +207,7 @@
                 <h2 class="team__header">Nasz zespół</h2>
                 <ul class="team__he-she">
                     <li class="team__our">
-                        <figure>
+                        <figure class="team__img">
                             <picture>
                                 <source
                                     srcset="images/img-1mobile@2x.jpg"
@@ -359,7 +361,7 @@
                         </figure>
                     </li>
                     <li class="team__our">
-                        <figure>
+                        <figure class="team__img">
                             <picture>
                                 <source
                                     srcset="images/img-3mobile@2x.jpg"
@@ -377,8 +379,8 @@
                             <figcaption>
                                 <h4 class="team__person">John Doe</h4>
                                 <p class="team__title-person">Marketing</p>
-                                <ul class="team__list social">
-                                    <li>
+                                <ul class="team__list">
+                                    <li class="social">
                                         <a href="" class="icon-social">
                                             <svg
                                                 width="20"
@@ -391,7 +393,7 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="social">
                                         <a href="" class="icon-social">
                                             <svg
                                                 width="20"
@@ -404,7 +406,7 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="social">
                                         <a href="" class="icon-social">
                                             <svg
                                                 width="20"
@@ -417,7 +419,7 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="social">
                                         <a href="#" class="icon-social">
                                             <svg
                                                 width="20"
@@ -435,7 +437,7 @@
                         </figure>
                     </li>
                     <li class="team__our">
-                        <figure>
+                        <figure class="team__img">
                             <picture>
                                 <source
                                     srcset="images/img-4mobile@2x.jpg"
@@ -446,8 +448,8 @@
                                     height="260"
                                     alt="team_card4"
                                     srcset="images/img-4mobile@2x.jpg"
-                                    class="team--img"
-                            /></picture>
+                                    class="team--img"/> 
+                            </picture>
                             <figcaption>
                                 <h4 class="team__person">John Doe</h4>
                                 <p class="team__title-person">UI Designer</p>
@@ -511,193 +513,162 @@
                 </ul>
             </section>
             <section class="section container client">
-                    <h2 class="client__header">Nasi klienci</h2>
-                    <ul class="client__list">
-                        <li class="client__svg">
-                            <a  href="">
-                                <svg
-                                    width="106"
-                                    height="60"
-                                    class="client--img"
-                                >
-                                    <use href="images/icons.svg#yoco"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="client__svg">
-                            <a  href="">
-                                <svg
-                                    width="106"
-                                    height="60"
-                                    class="client--img"
-                                >
-                                    <use href="images/icons.svg#campany1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="client__svg">
-                            <a  href="">
-                                <svg
-                                    width="106"
-                                    height="60"
-                                    class="client--img"
-                                >
-                                    <use href="images/icons.svg#campany2"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="client__svg">
-                            <a  href="">
-                                <svg
-                                    width="106"
-                                    height="60"
-                                    class="client--img"
-                                >
-                                    <use href="images/icons.svg#foster"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="client__svg">
-                            <a  href="">
-                                <svg
-                                    width="106"
-                                    height="60"
-                                    class="client--img"
-                                >
-                                    <use href="images/icons.svg#brandt"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="client__svg">
-                            <a  href="">
-                                <svg
-                                    width="106"
-                                    height="60"
-                                    class="client--img"
-                                >
-                                    <use href="images/icons.svg#campany6"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
+                <h2 class="client__header">Nasi klienci</h2>
+                <ul class="client__list">
+                    <li class="client__svg">
+                        <a href="">
+                            <svg width="106" height="60" class="client--img">
+                                <use href="images/icons.svg#yoco"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client__svg">
+                        <a href="">
+                            <svg width="106" height="60" class="client--img">
+                                <use href="images/icons.svg#campany1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client__svg">
+                        <a href="">
+                            <svg width="106" height="60" class="client--img">
+                                <use href="images/icons.svg#campany2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client__svg">
+                        <a href="">
+                            <svg width="106" height="60" class="client--img">
+                                <use href="images/icons.svg#foster"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client__svg">
+                        <a href="">
+                            <svg width="106" height="60" class="client--img">
+                                <use href="images/icons.svg#brandt"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client__svg">
+                        <a href="">
+                            <svg width="106" height="60" class="client--img">
+                                <use href="images/icons.svg#campany6"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </section>
         </main>
         <footer class="footer section footer__list">
-        
-                
-                <div class="footer__nav">
+            <div class="footer__nav">
+                <a class="footer__logo footer--white" href="./index.html">
+                    <span class="footer__logo--web">Web</span>Studio
+                </a>
+            </div>
+            <address class="footer__address">
+                <ul class="footer__address--contact">
+                    <li class="footer__address--one">
+                        m. Warszawa, Aleje Jerozolimskie 21
+                    </li>
+                    <li class="footer__address--list">
                         <a
-                            class="footer__logo footer--white"
-                            href="./index.html"
+                            href="mailto:info@example.com"
+                            class="footer__address--link"
+                            title="portfolio"
+                            >info@devstudio.com</a
                         >
-                            <span class="footer__logo--web">Web</span>Studio
-                        </a>
-                </div>
-                <address class="footer__address">
-                       
-                        <ul class="footer__address--contact"> 
-                            <li class="footer__address--one" >m. Warszawa, Aleje Jerozolimskie 21</li>
-                            <li class="footer__address--list">
-                                <a
-                                    href="mailto:info@example.com"
-                                    class="footer__address--link"
-                                    title="portfolio"
-                                    >info@devstudio.com</a
-                                >
-                            </li>
-                            <li class="logo__address__contact">
-                                <a
-                                    href="tel:+48111111111"
-                                    class="footer__address--link"
-                                    >+48 111 111 111</a
-                                >
-                            </li>
-                        </ul>
-                </address>
-            
-                <div class="footer__social">
-                    <h5 class="footer__social--heading">DOŁĄCZ DO NAS</h5>
-                    <ul class="footer__social--list">
-                        <li>
-                            <a href="" class="footer__social--svg">
-                                <svg
-                                    width="20"
-                                    height="20"
-                                    class="footer__social--img"
-                                >
-                                    <use href="images/icons.svg#insta"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="footer__social--svg">
-                                <svg
-                                    width="20"
-                                    height="20"
-                                    class="footer__social--img"
-                                >
-                                    <use href="images/icons.svg#tw"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="footer__social--svg">
-                                <svg
-                                    width="20"
-                                    height="20"
-                                    class="footer__social--img"
-                                >
-                                    <use href="images/icons.svg#face"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="footer__social--svg">
-                                <svg
-                                    width="20"
-                                    height="20"
-                                    class="footer__social--img"
-                                >
-                                    <use href="images/icons.svg#in"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__newsletter">
-                    <h4 class="footer__newstetter--heading">
-                        Zapisz się do newslettera
-                    </h4>
-                    <form
-                        name="newsletter"
-                        autocomplete="on"
-                        class="footer__newsletter--form"
-                    >
-                        <label>
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="E-mail"
-                                class="footer__newsletter--input"
-                            />
-                        </label>
-                        <button
-                            type="submit"
-                            class="footer__newsletter--button"
-                            name="button-news"
+                    </li>
+                    <li class="logo__address__contact">
+                        <a href="tel:+48111111111" class="footer__address--link"
+                            >+48 111 111 111</a
                         >
-                            Zapisz się
+                    </li>
+                </ul>
+            </address>
+
+            <div class="footer__social">
+                <h5 class="footer__social--heading">DOŁĄCZ DO NAS</h5>
+                <ul class="footer__social--list">
+                    <li>
+                        <a href="" class="footer__social--svg">
                             <svg
-                                width="24"
-                                height="24"
-                                class="footer__newsletter--icon"
+                                width="20"
+                                height="20"
+                                class="footer__social--img"
                             >
-                                <use href="./images/icons.svg#icon-send"></use>
+                                <use href="images/icons.svg#insta"></use>
                             </svg>
-                        </button>
-                    </form>
-                </div>
-           
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__social--svg">
+                            <svg
+                                width="20"
+                                height="20"
+                                class="footer__social--img"
+                            >
+                                <use href="images/icons.svg#tw"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__social--svg">
+                            <svg
+                                width="20"
+                                height="20"
+                                class="footer__social--img"
+                            >
+                                <use href="images/icons.svg#face"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__social--svg">
+                            <svg
+                                width="20"
+                                height="20"
+                                class="footer__social--img"
+                            >
+                                <use href="images/icons.svg#in"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__newsletter">
+                <h4 class="footer__newstetter--heading">
+                    Zapisz się do newslettera
+                </h4>
+                <form
+                    name="newsletter"
+                    autocomplete="on"
+                    class="footer__newsletter--form"
+                >
+                    <label>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="E-mail"
+                            class="footer__newsletter--input"
+                        />
+                    </label>
+                    <button
+                        type="submit"
+                        class="footer__newsletter--button"
+                        name="button-news"
+                    >
+                        Zapisz się
+                        <svg
+                            width="24"
+                            height="24"
+                            class="footer__newsletter--icon"
+                        >
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </footer>
         <div class="backdrop backdrop--hidden" data-modal>
             <div class="backdrop__modal container">

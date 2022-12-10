@@ -1,67 +1,103 @@
-.lorem {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    min-width: 380px;
+@media (min-width: 380px) and (max-width: 768px) {
+    .lorem {
+        margin: 0, auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        min-width: 380px;
+    }
+    .lorem__list {
+        margin-bottom: 30px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 10px, 15px;
+    }
+    .lorem__text {
+        @include font-styles(14px, 400, 0.03em);
+        font-family: $font;
+        line-height: 1.71rem;
+        color: grey1;
+        text-align: left;
+        padding-left: 25px;
+        padding-right: 15px;
+        min-width: 380px;
+    }
+    .lorem__header {
+        padding-top: 30px;
+        @include font-styles(14px, 700, 0.3em);
+        text-align: center;
+        width: 380px;
+        font-family: $font;
+        line-height: 1.14em;
+        text-transform: uppercase;
+        color: #212121;
+    }
+    .lorem__img {
+        @include set-flex(column, center, center);
+        width: 380px;
+        height: 120px;
+        border-radius: 4px;
+        background-color: $team;
+    }
+    .lorem__icon {
+        width: 54.83px;
+        height: 60.66px;
+    }
 }
-.lorem__list {
-    margin-bottom: 30px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10px, 15px;
-    justify-content: center;
-}
-.lorem__text {
-    @include font-styles(14px, 400, 0.03em);
-    font-family: $font;
-    line-height: 1.71rem;
-    color: grey1;
-    text-align: left;
-    margin: 15px, auto;
-    width: 380px;
-}
-.lorem__header {
-    padding-top: 30px;
-    @include font-styles(14px, 700, 0.3em);
-    text-align: center;
-    width: 380px;
-    font-family: $font;
-    line-height: 1.14em;
-    text-transform: uppercase;
-    color: #212121;
-}
-.lorem__icon {
-    display: flex;
-    width: 380px;
-    height: 120px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    background: #f5f4fa;
-}
-
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .lorem {
         padding-bottom: 60px;
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        justify-content: center;
-        align-items: center;
         min-width: 768px;
     }
     .lorem__list {
         flex-basis: calc((100% - 2 * 15px) / 2);
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .lorem__text {
+        @include font-styles(14px, 400, 0.03em);
+        font-family: $font;
+        line-height: 1.71rem;
+        color: $grey1;
+        text-align: left;
+        padding-left: 15px;
+        min-width: 354px;
+    }
+    .lorem__header {
+        padding-top: 30px;
+        @include font-styles(14px, 700, 0.3em);
+        text-align: center;
+        width: 354px;
+        font-family: $font;
+        line-height: 1.14em;
+        text-transform: uppercase;
+        color: #212121;
+    }
+    .lorem__img {
+        @include set-flex(column, center, center);
+        width: 354px;
+        height: 120px;
+        border-radius: 4px;
+        background-color: $team;
+    }
+    .lorem__icon {
+        width: 65.32px;
+        height: 70px;
     }
 }
-
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1600px) {
     .lorem {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        width: 1170px;
+        min-width: 1170px;
+        padding-top: 94px;
     }
 
     .lorem__text {
@@ -71,21 +107,29 @@
         font-size: 14px;
         line-height: 1.71rem;
         letter-spacing: 0.03em;
-        color: grey1;
+        color: $grey1;
         text-align: justify;
         flex-basis: calc((100% - 2 * 15px) / 4);
+        margin-top: 10px;
     }
-    .lorem__header--text {
+    .lorem__header {
         text-align: left;
         width: 270px;
         font-family: $font;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
+        @include font-styles(14px, 700, 0.3em);
         line-height: 1.14em;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #212121;
+        color: $dark1;
+        padding-top: 30px;
+    }
+    .lorem__img {
+        display: flex;
+        max-width: 354px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        background-color: $team;
     }
     .lorem__icon {
         margin-left: 102px;
