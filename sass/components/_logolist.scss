@@ -77,7 +77,7 @@
             line-height: 1.14em;
             letter-spacing: 0.02em;
             color: $grey1;
-            margin-left:345px;
+            margin-left: 345px;
         }
         .contact-nav__nav {
             @include set-flex(row, center, flex-end);
@@ -90,7 +90,7 @@
         }
         .contact-nav__link--address {
             color: $grey1;
-             @include set-flex(row, center, flex-end);
+            @include set-flex(row, center, flex-end);
             text-decoration: none;
             transition-property: color;
             transition-duration: 250ms;
@@ -226,7 +226,7 @@
     .navigation__contact {
         @include set-flex(row, flex-end, center);
         list-style: none;
-        margin-left: 101px;
+        margin-left: 345px;
         list-style: none;
         @include font-styles(12px, 500, 0.02em);
         line-height: 1.14em;
@@ -314,7 +314,7 @@
             }
         }
         .contact-nav__icon {
-            margin-right: 5px;
+            margin-right: 10px;
         }
     }
 }

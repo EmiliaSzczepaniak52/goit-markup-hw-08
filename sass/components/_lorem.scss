@@ -93,20 +93,16 @@
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
     .lorem {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        min-width: 1170px;
+        @include set-flex(row, center, center);
+        gap: 30px;
+        min-width: 1200px;
         padding-top: 94px;
     }
 
     .lorem__text {
         font-family: $font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
+        @include font-styles(14px, 400, 0.03em);
         line-height: 1.71rem;
-        letter-spacing: 0.03em;
         color: $grey1;
         text-align: justify;
         flex-basis: calc((100% - 2 * 15px) / 4);
@@ -132,11 +128,11 @@
         background-color: $team;
     }
     .lorem__icon {
-        margin-left: 102px;
         margin-bottom: 30px;
         margin-top: 25px;
     }
     .lorem__list {
+        margin: 0px;
         width: 270px;
         height: 120px;
         background-color: #f5f4fa;
