@@ -139,99 +139,108 @@
         &:hover &:focus {
             color: $greytwo;
         }
-
-        .navigation__link {
-            text-decoration: none;
-            line-height: 16px;
-            color: $black;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover {
-                color: $blue;
-                text-decoration: none;
-            }
-        }
-
-        .navigation__link--underline {
-            position: relative;
-            color: $black;
-            width: 40px;
-            border-bottom: 4px solid $white;
-            transition-property: border-bottom;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-            &::after {
-                content: " ";
-                display: block;
-                width: 100%;
-                height: 4px;
-                bottom: 0;
-                left: 0;
-                background-color: $blue;
-                transform: translateY(28px);
-                border-radius: 2px;
-                pointer-events: none;
-            }
-        }
-
-        .navigation__contact {
-            @include font-styles(12px, 500, 0.02em);
-            display: flex;
-            list-style: none;
-            color: $grey1;
-        }
-        .contact-nav__nav {
-            @include set-flex(row, center, flex-end);
-            color: $greythree;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            margin-left: 30px;
+    }
+    .navigation__link {
+        text-decoration: none;
+        line-height: 16px;
+        color: $black;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            color: $blue;
             text-decoration: none;
         }
-        .contact-nav__link--address {
-            color: $grey1;
-            text-decoration: none;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover {
-                color: $blue;
-                fill: $blue;
-            }
-            &:focus {
-                color: $blue;
-                fill: $blue;
-            }
+    }
+
+    .navigation__link--underline {
+        position: relative;
+        color: $black;
+        width: 40px;
+        border-bottom: 4px solid $white;
+        transition-property: border-bottom;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &::after {
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            left: 0;
+            background-color: $blue;
+            transform: translateY(28px);
+            border-radius: 2px;
+            pointer-events: none;
         }
-        .contact-nav__icon {
-            margin-right: 5px;
+    }
+
+    .navigation__contact {
+        @include font-styles(12px, 500, 0.02em);
+        display: flex;
+        list-style: none;
+        color: $grey1;
+    }
+    .contact-nav__nav {
+        @include set-flex(row, center, flex-end);
+        color: $greythree;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        margin-left: 30px;
+        text-decoration: none;
+    }
+    .contact-nav__link--address {
+        color: #757575;
+        text-decoration: none;
+        &:hover {
+            color: $blue;
+            fill: $blue;
         }
+        &:focus {
+            color: $blue;
+            fill: $blue;
+        }
+    }
+
+    .contact-nav__icon {
+        margin-right: 5px;
     }
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
     .navigation {
-        @include set-flex(row, space-around, center);
+        @include set-flex(row, space-between, center);
     }
     .navigation__list {
         @include set-flex(row, center, center);
         list-style: none;
         padding-left: 46px;
+        padding-right: 345px;
         @include font-styles(14px, 500, 0.02em);
         line-height: 1.14em;
         color: $greythree;
     }
     .navigation__contact {
-        @include set-flex(row, flex-end, center);
+        @include set-flex(row, center, center);
         list-style: none;
-        margin-left: 345px;
-        list-style: none;
-        @include font-styles(12px, 500, 0.02em);
+        @include font-styles(14px, 500, 0.02em);
         line-height: 1.14em;
         color: $grey1;
+    }
+    .contact-nav__nav {
+        width: 161px;
+        // padding-left: 10px;
+        @include set-flex(column, flex-end, flex-end);
+        gap: 30px;
+    }
+    .contact-nav__link--address {
+        color: #757575;
         text-decoration: none;
+        &:hover {
+            color: $blue;
+            text-decoration: none;
+        }
     }
     .navigation__list-item {
         transition-property: color;
@@ -241,80 +250,52 @@
         &:hover &:focus {
             color: $greytwo;
         }
-
-        .navigation__link {
-            text-decoration: none;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 16px;
-            color: $black;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover {
-                color: $blue;
-                text-decoration: none;
-            }
-        }
-
-        .navigation__link--underline {
-            position: relative;
-            color: $black;
-            width: 40px;
-            border-bottom: 4px solid $white;
-            transition-property: border-bottom;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-            &::after {
-                content: " ";
-                display: block;
-                width: 100%;
-                height: 4px;
-                bottom: 0;
-                left: 0;
-                background-color: $blue;
-                transform: translateY(28px);
-                border-radius: 2px;
-                pointer-events: none;
-            }
-        }
-
-        .navigation__contact {
-            font-style: normal;
-            list-style: none;
-            font-size: 14px;
-            line-height: 1.14em;
-            letter-spacing: 0.02em;
-            color: $grey1;
-            margin-left: 46px;
-            @include set-flex(row, center, flex-end);
-        }
-        .contact-nav__nav {
-            color: $greythree;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            margin-left: 30px;
+    }
+    .navigation__link {
+        text-decoration: none;
+        font-weight: 500;
+        line-height: 16px;
+        color: $black;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            color: $blue;
             text-decoration: none;
         }
-        .contact-nav__link--address {
-            color: $grey1;
-            text-decoration: none;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover {
-                color: $blue;
-                fill: $blue;
-            }
-            &:focus {
-                color: $blue;
-                fill: $blue;
-            }
-        }
-        .contact-nav__icon {
-            margin-right: 10px;
+    }
+    .navigation__contact {
+        list-style: none;
+        @include font-styles(14px, 500, 0.02em);
+        line-height: 1.14em;
+        color: $greythree;
+        @include set-flex(row, center, flex-end);
+    }
+
+    .contact-nav__icon {
+        margin-right: 5px;
+    }
+    .navigation__link--underline {
+        position: relative;
+        color: $black;
+        width: 40px;
+        border-bottom: 4px solid $white;
+        transition-property: border-bottom;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &::after {
+            content: " ";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            left: 0;
+            background-color: $blue;
+            transform: translateY(28px);
+            border-radius: 2px;
+            pointer-events: none;
         }
     }
 }

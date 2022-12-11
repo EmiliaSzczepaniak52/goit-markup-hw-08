@@ -160,7 +160,6 @@
         color: $white;
         display: flex;
         flex-wrap: wrap;
-       
     }
     .footer__logo {
         @include font-styles(24px, 700, 0.03em);
@@ -192,7 +191,6 @@
         font-family: $font;
         color: $white;
         margin-top: 20px;
-        font-style: normal;
     }
     .footer__address--contact {
         min-width: 232px;
@@ -204,19 +202,10 @@
         font-family: $font;
         text-align: center;
     }
-    .footer__address--list {
-        line-height: 1.14em;
-        letter-spacing: 0.02em;
-        list-style: none;
-        padding-top: 9px;
-        color: rgba(255, 255, 255, 0.6);
-    }
-    .logo__address__contact{
-        color: rgba(255, 255, 255, 0.6);
-    }
+
     .footer__address--link {
         text-decoration: none;
-        color: rgba(13, 6, 6, 0.6);
+        color: rgba(255, 255, 255, 0.6);
     }
     .footer__social--heading {
         @include font-styles(14px, 700, 0.3em);
@@ -287,7 +276,6 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         padding-left: 16px;
-        // margin-left: 78px;
         background: $dark;
         color: rgba(255, 255, 255, 0.6);
     }
@@ -313,6 +301,7 @@
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
     .footer {
+        margin: 0;
         background-color: $dark;
         min-width: 1200px;
         color: $white;
@@ -320,7 +309,7 @@
     }
     .footer__logo {
         @include font-styles(24px, 700, 0.03em);
-
+        margin-top: 60px;
         line-height: 1.19em;
         font-family: $fonttwo;
         text-decoration: none;
@@ -377,12 +366,12 @@
     }
 
     .footer__social {
-        padding-top: 72px;
+        padding-top: 60px;
         padding-left: 70px;
     }
     .footer__social--heading {
         padding-top: 5px;
-        @include font-styles(14px, 700, 0.3em);
+        @include font-styles(14px, 700, 0.03em);
         text-transform: uppercase;
         text-align: center;
         color: $white;
@@ -421,7 +410,7 @@
     }
     .footer__newsletter {
         padding-left: 67px;
-        padding-top: 70px;
+        padding-top: 60px;
         display: flex;
         font-family: $font;
         @include font-styles(16px, 700, 0.06em);
@@ -441,9 +430,7 @@
     }
     .footer__newsletter--form {
         margin-top: 20px;
-        // display: flex;
-        // align-items: center;
-        // text-align: center;
+        @include set-flex(row, center, center);
     }
     .footer__newsletter--input {
         width: 358px;
@@ -452,7 +439,6 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         padding-left: 16px;
-        // margin-left: 78px;
         background: $dark;
         color: rgba(255, 255, 255, 0.6);
     }
@@ -468,8 +454,7 @@
         @include font-styles(16px, 700, 0.06em);
         line-height: 1.88rem;
         color: $white;
-        margin-top: 20px;
-        // margin-bottom: 92px;
+        margin-left: 12px;
         text-align: center;
     }
     .footer__newsletter--icon {
