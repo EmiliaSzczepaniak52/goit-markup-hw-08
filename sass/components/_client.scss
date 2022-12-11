@@ -58,31 +58,33 @@
     .client__header {
         @include font-styles(33px, 700, 0.03em);
         line-height: 1.16;
-        margin: 0 auto;
+        margin: 0;
         font-family: $font;
         text-align: center;
         color: $dark1;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 60px;
     }
     .client__list {
+        padding-top: 30px;
+        max-width: 1200px;
         display: flex;
-        flex-basis: calc((100% - 2 * 15px) / 3);
-        max-width: 226px;
-        height: 92px;
-        @include set-flex(column, center, center);
+        flex-wrap: wrap;
         gap: 30px;
         list-style: none;
     }
 
     .client__svg {
+        // flex-basis: calc((100% - 2 * 15px) / 3);
         border: 1px solid #afb1b8;
         border-radius: 4px;
+        width: 226px;
+        height: 92px;
         display: block;
         fill: $grey1;
-        padding-left: 60px;
-        padding-top: 16px;
-        flex-basis: calc((100% - 2 * 15px) / 3);
+        // padding-left: 60px;
+        // padding-top: 16px;
+        // flex-basis: calc((100% - 2 * 15px) / 3);
         transition-property: border, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,7 +98,10 @@
         fill: $blue;
     }
     .client--img {
-        margin: auto;
+        // padding-left: 62px;
+        // padding-top: 16px;
+        width: 106px;
+        height: 60px;
         fill: #afb1b8;
         transition-property: fill;
         transition-duration: 250ms;
@@ -104,32 +109,33 @@
     }
 }
 
-@media screan and (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 1200px) and (max-width: 1600px) {
     .client {
         min-width: 1200px;
-        min-height: 92px;
+        height: auto;
+        margin: auto;
     }
     .client__header {
         @include font-styles(37px, 700, 0.03em);
         line-height: 1.16;
-        margin: 0 auto;
+        margin: 0, auto;
         font-family: $font;
         text-align: center;
         color: $dark1;
-        text-align: center;
         margin-top: 94px;
     }
     .client__list {
+        min-width: 1200px;
+        margin: 0, auto;
         margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
         list-style: none;
+        @include set-flex(row, center, center);
+        gap: 30px;
+        margin-bottom: 94px;
     }
 
     .client__svg {
-        width: 170px;
-        height: 92px;
+        min-width: 170px;
         border: 1px solid #afb1b8;
         border-radius: 4px;
         display: block;
